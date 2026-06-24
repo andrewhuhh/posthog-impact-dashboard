@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "re
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
 import {
+  ArrowDownUp,
   BadgeCheck,
   BarChart3,
   CalendarDays,
@@ -26,6 +27,7 @@ import {
   Plus,
   Search,
   Table2,
+  Tag,
   Trophy,
   UserRound,
   Users,
@@ -79,6 +81,12 @@ type RubricScore = {
   sources: string[];
 };
 
+type TileAction = {
+  icon: React.ReactNode;
+  label: string;
+  onSelect: () => void;
+};
+
 type QualitativePr = {
   areas: string[];
   confidence: string;
@@ -116,7 +124,7 @@ type RouteState = {
 
 type TooltipContent = {
   kicker?: string;
-  title?: string;
+  title?: string | null;
   description?: string;
   rows?: {
     icon: React.ReactNode;
@@ -141,7 +149,15 @@ const rubricLabels: Record<string, string> = {
   communication: "Communication",
 };
 
-const rubricColors = ["#f5a623", "#2451f5", "#20745f", "#d64f2a", "#7e2bc8", "#111111", "#8f969e"];
+const rubricColors: Record<string, string> = {
+  problem_importance: "#f5a623",
+  area_leverage: "#2451f5",
+  communication: "#20745f",
+  review_collaboration: "#d64f2a",
+  test_validation: "#7e2bc8",
+  risk_handling: "#111111",
+  technical_soundness: "#8f969e",
+};
 const numberFormatter = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
 
 function parseRoute(): RouteState {
@@ -229,12 +245,79 @@ function reasonFor(person: ContributorQuality, rank: number) {
   return `${formatRank(rank)} in the analysis because ${person.executive_summary.replace(/^.*?shows /i, "").replace(/\.$/, "")}.`;
 }
 
+function impactRank(person: ContributorQuality | undefined, index: number) {
+  return person?.impact_rank ?? index + 1;
+}
+
+function normalizedImpactScore(person: ContributorQuality | undefined, maxImpact: number) {
+  if (!person?.provisional_impact_total || maxImpact <= 0) {
+    return 0;
+  }
+  return (person.provisional_impact_total / maxImpact) * 100;
+}
+
+function highlightedJson(value: unknown) {
+  const escaped = JSON.stringify(value, null, 2)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  return escaped.replace(
+    /("(?:\\u[\da-fA-F]{4}|\\[^u]|[^\\"])*"(?=\s*:))|("(?:\\u[\da-fA-F]{4}|\\[^u]|[^\\"])*")|\b(true|false)\b|\b(null)\b|(-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)/g,
+    (match, key, string, booleanValue, nullValue, numberValue) => {
+      if (key) return `<span class="json-key">${key}</span>`;
+      if (string) return `<span class="json-string">${string}</span>`;
+      if (booleanValue) return `<span class="json-boolean">${booleanValue}</span>`;
+      if (nullValue) return `<span class="json-null">${nullValue}</span>`;
+      if (numberValue) return `<span class="json-number">${numberValue}</span>`;
+      return match;
+    },
+  );
+}
+
 function displayName(person: ContributorQuality) {
   return person.name?.trim() || `@${person.contributor}`;
 }
 
 function profileUrl(person: ContributorQuality) {
   return person.html_url || `https://github.com/${person.contributor}`;
+}
+
+function gradeForScore(score: number) {
+  if (score >= 90) return "A+";
+  if (score >= 85) return "A";
+  if (score >= 80) return "A-";
+  if (score >= 75) return "B+";
+  if (score >= 70) return "B";
+  if (score >= 65) return "B-";
+  if (score >= 60) return "C+";
+  if (score >= 55) return "C";
+  if (score >= 50) return "C-";
+  if (score >= 47) return "D+";
+  if (score >= 43) return "D";
+  if (score >= 40) return "D-";
+  return "F";
+}
+
+function gradeClass(score: number) {
+  return `grade-${gradeForScore(score).toLowerCase().replace("+", "plus").replace("-", "minus")}`;
+}
+
+function impactClass(score: number) {
+  return `impact-${gradeForScore(score).toLowerCase().replace("+", "plus").replace("-", "minus")}`;
+}
+
+function workTypeClass(workType: string) {
+  return `work-type-${workType.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+}
+
+function WorkTypePill({ workType }: { workType: string }) {
+  return (
+    <span className={`work-type-pill ${workTypeClass(workType)}`}>
+      <Tag size={12} aria-hidden="true" />
+      {workType}
+    </span>
+  );
 }
 
 function ContributorAvatar({ person, size = "sm" }: { person: ContributorQuality; size?: "xs" | "sm" }) {
@@ -251,10 +334,18 @@ function VerifiedBadge({ person }: { person: ContributorQuality }) {
   }
 
   return (
-    <span className="verified-badge" title="Verified public member of the PostHog GitHub organization">
-      <BadgeCheck size={13} aria-hidden="true" />
-      Verified
-    </span>
+    <EdgeAwarePopover
+      id={`verified-${person.contributor.toLowerCase()}`}
+      className="verified-popover"
+      trigger={(
+        <span className="verified-badge" tabIndex={0} role="img" aria-label="PostHog organization member">
+          <BadgeCheck size={14} aria-hidden="true" />
+        </span>
+      )}
+    >
+      <span className="popover-kicker">Verified contributor</span>
+      <span className="popover-description">User is a PostHog organization member.</span>
+    </EdgeAwarePopover>
   );
 }
 
@@ -272,15 +363,19 @@ function confidenceLevel(value: string) {
   return "unknown";
 }
 
+function confidenceLabel(value: string) {
+  const level = confidenceLevel(value);
+  if (level === "high") {
+    return "High";
+  }
+  if (level === "low") {
+    return "Low";
+  }
+  return "Okay";
+}
+
 function ConfidenceBadge({ value }: { value: string }) {
-  return (
-    <span className={`confidence-badge ${confidenceLevel(value)}`}>
-      {value} judgement confidence
-      <span className="mini-tooltip">
-        Confidence reflects how much visible GitHub evidence supports the judgement, including reviewed PR depth, source context, and public review signal.
-      </span>
-    </span>
-  );
+  return <>{confidenceLabel(value)}</>;
 }
 
 function RankMarker({ rank }: { rank: number }) {
@@ -402,7 +497,7 @@ function EdgeAwarePopover({
     const boundaryRight = window.innerWidth - margin;
     const boundaryBottom = window.innerHeight - margin;
     const boundaryWidth = Math.max(220, boundaryRight - boundaryLeft);
-    const desiredWidth = className.includes("analysis-date-popover") ? 340 : 360;
+    const desiredWidth = className.includes("analysis-date-popover") ? 340 : className.includes("verified-popover") || className.includes("score-card-popover") ? 260 : 360;
     const width = Math.min(desiredWidth, boundaryWidth);
     const centeredLeft = triggerRect.left + triggerRect.width / 2 - width / 2;
     const leftAligned = triggerRect.left;
@@ -456,7 +551,7 @@ function EdgeAwarePopover({
   );
 }
 
-function TileActions({ title, description }: { title: string; description: string }) {
+function TileActions({ title, description, actions = [] }: { title: string; description: string; actions?: TileAction[] }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -505,6 +600,20 @@ function TileActions({ title, description }: { title: string; description: strin
       </button>
       {open ? (
         <div className="tile-action-menu" role="menu">
+          {actions.map((action) => (
+            <button
+              type="button"
+              role="menuitem"
+              key={action.label}
+              onClick={() => {
+                action.onSelect();
+                setOpen(false);
+              }}
+            >
+              {action.icon}
+              {action.label}
+            </button>
+          ))}
           <button type="button" role="menuitem" onClick={copyMarkdown}>
             {copied ? <Check size={14} aria-hidden="true" /> : <Files size={14} aria-hidden="true" />}
             {copied ? "Copied" : "Copy as Markdown"}
@@ -520,11 +629,13 @@ function TileHeader({
   title,
   description,
   tooltip,
+  actions,
 }: {
   color: string;
   title: string;
   description: string;
   tooltip?: TooltipContent;
+  actions?: TileAction[];
 }) {
   const tooltipId = `tip-${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`;
 
@@ -544,7 +655,7 @@ function TileHeader({
               )}
             >
               {tooltip.kicker ? <span className="popover-kicker">{tooltip.kicker}</span> : null}
-              <span className="popover-title">{tooltip.title ?? title}</span>
+              {tooltip.title !== null ? <span className="popover-title">{tooltip.title ?? title}</span> : null}
               {tooltip.description ? <span className="popover-description">{tooltip.description}</span> : null}
               {tooltip.rows?.map((row) => (
                 <span className="popover-row" key={row.label}>
@@ -557,7 +668,7 @@ function TileHeader({
         </h3>
         <p>{description}</p>
       </div>
-      <TileActions title={title} description={description} />
+      <TileActions title={title} description={description} actions={actions} />
     </div>
   );
 }
@@ -626,18 +737,14 @@ function PersonRow({
   );
 }
 
-function ComponentBars({ items }: { items: { key: string; label: string; percent: number }[] }) {
+function RubricScores({ items }: { items: { key: string; label: string; score: number }[] }) {
   return (
-    <div className="bars">
-      {items.map((item, index) => (
-        <div className="bar-row" key={item.key}>
-          <div className="bar-label">
-            <span>{item.label}</span>
-            <b>{pct(item.percent)}</b>
-          </div>
-          <div className="track">
-            <div className="fill" style={{ width: `${item.percent}%`, background: rubricColors[index % rubricColors.length] }} />
-          </div>
+    <div className="rubric-scores">
+      {items.map((item) => (
+        <div className="rubric-score-row" key={item.key}>
+          <span className="rubric-dot" style={{ background: rubricColors[item.key] ?? "#8f969e" }} />
+          <span>{item.label}</span>
+          <b>{formatNumber(item.score)}<small>/5</small></b>
         </div>
       ))}
     </div>
@@ -676,9 +783,7 @@ function Sidebar({
     person.contributor.toLowerCase().includes(normalizedQuery) ||
     (person.name?.toLowerCase().includes(normalizedQuery) ?? false),
   );
-  const topFive = contributors.slice(0, 5);
-  const remainingContributors = contributors.slice(5);
-  const displayedContributors = query ? filteredContributors : remainingContributors;
+  const displayedContributors = query ? filteredContributors : contributors;
 
   useEffect(() => {
     if (!contributorSheetOpen) {
@@ -764,30 +869,7 @@ function Sidebar({
             <Search size={14} aria-hidden="true" />
             <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search contributors" />
           </label>
-          {!query ? (
-            <div className="sidebar-extension-group">
-              <p>Top five</p>
-              {topFive.map((person, index) => (
-                <button
-                  className={`contributor-link ${selectedContributor === person.contributor ? "active" : ""}`}
-                  key={person.contributor}
-                  onClick={() => {
-                    openContributor(index);
-                    setContributorSheetOpen(false);
-                    closeMobileSidebar();
-                  }}
-                >
-                  <span>{formatRank(index + 1)}</span>
-                  <ContributorAvatar person={person} size="xs" />
-                  <b>{displayName(person)} <VerifiedBadge person={person} /></b>
-                  {person.name ? <small>@{person.contributor}</small> : null}
-                  <em>{formatNumber(person.quality_score)}</em>
-                </button>
-              ))}
-            </div>
-          ) : null}
           <div className="sidebar-extension-group">
-            <p>{query ? "Matching contributors" : "Rest"}</p>
             {displayedContributors.map((person) => {
               const index = contributors.findIndex((candidate) => candidate.contributor === person.contributor);
               return (
@@ -800,7 +882,7 @@ function Sidebar({
                     closeMobileSidebar();
                   }}
                 >
-                  <span>{formatRank(index + 1)}</span>
+                  <span>{formatRank(impactRank(person, index))}</span>
                   <ContributorAvatar person={person} size="xs" />
                   <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                   {person.name ? <small>@{person.contributor}</small> : null}
@@ -828,9 +910,11 @@ function Sidebar({
 function LeaderboardHome({
   data,
   openContributor,
+  maxImpact,
 }: {
   data: AnalysisDashboard;
   openContributor: (index: number) => void;
+  maxImpact: number;
 }) {
   const topFive = data.contributors.slice(0, 5);
 
@@ -841,24 +925,16 @@ function LeaderboardHome({
           color="#2451f5"
           title="Leaderboard home"
           description="Ranked contributors, using qualitative PR review and programmatic source evidence as the primary impact model."
-          tooltip={{
-            kicker: "Ranking source",
-            description: "This view uses the imported contributor order as the dashboard's source of truth.",
-            rows: [
-              { icon: <Trophy size={14} aria-hidden="true" />, label: "Ranking basis", value: "Imported impact rank from the contributor-level analysis" },
-              { icon: <ListFilter size={14} aria-hidden="true" />, label: "Cohort", value: `${formatNumber(data.contributors.length)} ranked contributors from the exported analysis` },
-              { icon: <Database size={14} aria-hidden="true" />, label: "Evidence", value: `${formatNumber(data.reviews.length)} qualitatively reviewed PRs plus ${formatNumber(data.sourceCount)} cached source records` },
-            ],
-          }}
+          tooltip={{ description: "This view uses the imported contributor order as the dashboard source of truth." }}
         />
         <div className="tile-body">
           <div className="quicklinks">
             {topFive.map((person, index) => (
               <button className="quicklink" key={person.contributor} onClick={() => openContributor(index)}>
-                <span className="quicklink-rank"><RankMarker rank={index + 1} /></span>
+                <span className="quicklink-rank"><RankMarker rank={impactRank(person, index)} /></span>
                 <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                 {person.name ? <span className="quicklink-handle">@{person.contributor}</span> : null}
-                <em>{formatNumber(person.quality_score)} quality score</em>
+                <em>{formatNumber(normalizedImpactScore(person, maxImpact))} impact - {formatNumber(person.quality_score)} quality</em>
               </button>
             ))}
           </div>
@@ -870,15 +946,7 @@ function LeaderboardHome({
           color="#111111"
           title="Complete leaderboard"
           description="All ranked contributors from the analysis export, ordered by impact rank with quality signals for validation."
-          tooltip={{
-            kicker: "Leaderboard table",
-            description: "A compact audit view of the contributor-level summary file.",
-            rows: [
-              { icon: <CircleUserRound size={14} aria-hidden="true" />, label: "Rows", value: "One row per ranked contributor" },
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Quality", value: "0-100 contributor quality score used as supporting evidence" },
-              { icon: <Filter size={14} aria-hidden="true" />, label: "Open", value: "Jumps to the contributor profile with deeper evidence" },
-            ],
-          }}
+          tooltip={{ description: "Compact audit view of contributor-level ranking and supporting quality signals." }}
         />
         <div className="tile-body leaderboard-table">
           <table>
@@ -886,6 +954,7 @@ function LeaderboardHome({
               <tr>
                 <th>Rank</th>
                 <th>Engineer</th>
+                <th>Impact</th>
                 <th>Quality</th>
                 <th>Reviewed PRs</th>
                 <th>High confidence</th>
@@ -897,8 +966,9 @@ function LeaderboardHome({
             <tbody>
               {data.contributors.map((person, index) => (
                 <tr key={person.contributor}>
-                  <td>{formatRank(index + 1)}</td>
+                  <td>{formatRank(impactRank(person, index))}</td>
                   <td><span className="name-cell"><span>{displayName(person)} <VerifiedBadge person={person} /></span>{person.name ? <small>@{person.contributor}</small> : null}</span></td>
+                  <td>{formatNumber(normalizedImpactScore(person, maxImpact))}</td>
                   <td>{formatNumber(person.quality_score)}</td>
                   <td>{formatNumber(person.reviewed_pr_count)}</td>
                   <td>{formatNumber(person.high_confidence_impact_count)}</td>
@@ -917,9 +987,12 @@ function LeaderboardHome({
   );
 }
 
-function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; person: ContributorQuality; rank: number }) {
+function ContributorProfile({ data, person, rank, maxImpact }: { data: AnalysisDashboard; person: ContributorQuality; rank: number; maxImpact: number }) {
   const reviews = contributorReviews(data, person.contributor);
-  const rubric = averageRubricScores(reviews);
+  const [rubricSort, setRubricSort] = useState<"strongest" | "weakest">("strongest");
+  const rubric = averageRubricScores(reviews).sort((a, b) => (
+    rubricSort === "strongest" ? b.percent - a.percent : a.percent - b.percent
+  ));
   const areas = topAreas(reviews).slice(0, 6);
   const maxArea = Math.max(...areas.map(([, count]) => count), 1);
 
@@ -929,34 +1002,62 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
         <TileHeader
           color="#f5a623"
           title="Contributor profile"
-          description="Contributor score and sampled evidence summary."
-          tooltip={{
-            kicker: "Contributor profile",
-            description: "Profile summary from the contributor quality export.",
-            rows: [
-              { icon: <Trophy size={14} aria-hidden="true" />, label: "Rank", value: `${formatRank(rank)} in the analysis output` },
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Score", value: `${formatNumber(person.quality_score)}/100 final quality score` },
-              { icon: <ListFilter size={14} aria-hidden="true" />, label: "Sample", value: `${formatNumber(person.reviewed_pr_count)} reviewed PRs, ${formatNumber(person.high_confidence_impact_count)} high-confidence impact PRs` },
-            ],
-          }}
+          description="Impact rank, impact score, code quality, and sampled evidence summary."
+          tooltip={{ description: "Profile summary from the contributor quality export." }}
         />
         <div className="selected-body">
-          <div className="selected-score-card">
-            <span>{formatRank(rank)}</span>
+          <div className={`selected-impact-card ${impactClass(normalizedImpactScore(person, maxImpact))}`}>
+            <span className="score-card-label">
+              {formatRank(rank)}
+            </span>
+            <b>{formatNumber(normalizedImpactScore(person, maxImpact))}</b>
+            <em>
+              Impact score
+              <EdgeAwarePopover
+                id={`impact-score-${person.contributor.toLowerCase()}`}
+                className="score-card-popover"
+                trigger={(
+                  <button className="info-trigger score-info-trigger" aria-label="About impact score">
+                    <Info size={14} aria-hidden="true" />
+                  </button>
+                )}
+              >
+                <span className="popover-kicker">Impact score</span>
+                <span className="popover-description">Normalized 0-100 contributor impact score. It is derived from the analysis impact total, with the top contributor set to 100.</span>
+              </EdgeAwarePopover>
+            </em>
+          </div>
+          <div className={`selected-score-card ${gradeClass(person.quality_score)}`}>
+            <span className="score-card-label">
+              {gradeForScore(person.quality_score)}
+            </span>
             <b>{formatNumber(person.quality_score)}</b>
-            <em>Quality score</em>
+            <em>
+              Code quality
+              <EdgeAwarePopover
+                id={`quality-grade-${person.contributor.toLowerCase()}`}
+                className="score-card-popover"
+                trigger={(
+                  <button className="info-trigger score-info-trigger" aria-label="About code quality grade">
+                    <Info size={14} aria-hidden="true" />
+                  </button>
+                )}
+              >
+                <span className="popover-kicker">Code quality grade</span>
+                <span className="popover-description">Letter grade from the contributor quality score, using the deflated grading scale where A- begins at 80 and F is below 40.</span>
+              </EdgeAwarePopover>
+            </em>
           </div>
           <div className="selected-profile-main">
             <a className="selected-handle" href={profileUrl(person)} target="_blank" rel="noreferrer">
               {person.avatar_url ? <img src={person.avatar_url} alt="" /> : null}
               <span>
-                <b>{displayName(person)} <VerifiedBadge person={person} /></b>
+                <b><span className="selected-name-row">{displayName(person)} <VerifiedBadge person={person} /></span></b>
                 {person.name ? <small>@{person.contributor}</small> : null}
               </span>
             </a>
             <div className="selected-facts">
               <div><b>{formatNumber(person.reviewed_pr_count)}</b><span>Reviewed PRs</span></div>
-              <div><b>{formatNumber(person.high_confidence_impact_count)}</b><span>High-confidence impact</span></div>
               <div><b><ConfidenceBadge value={person.confidence} /></b><span>Judgement confidence</span></div>
             </div>
           </div>
@@ -967,35 +1068,25 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
         <TileHeader
           color="#2451f5"
           title="Rubric breakdown"
-          description="Average score across this contributor's reviewed PR sample, normalized from the 0-5 review rubric."
-          tooltip={{
-            kicker: "Rubric averages",
-            description: "Each bar averages the scored dimensions across this contributor's reviewed PRs.",
-            rows: [
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Scale", value: "Scores were assigned from 0 to 5, then normalized to percentages for display" },
-              { icon: <ListFilter size={14} aria-hidden="true" />, label: "Dimensions", value: "Importance, soundness, risk handling, collaboration, validation, leverage, and communication" },
-              { icon: <Database size={14} aria-hidden="true" />, label: "Rows included", value: `${formatNumber(reviews.length)} reviewed PRs for @${person.contributor}` },
-            ],
-          }}
+          description="Average 0-5 score across this contributor's reviewed PR sample."
+          tooltip={{ description: "Average rubric scores across this contributor's reviewed PRs." }}
+          actions={[{
+            icon: <ArrowDownUp size={14} aria-hidden="true" />,
+            label: rubricSort === "strongest" ? "Sort weakest first" : "Sort strongest first",
+            onSelect: () => setRubricSort((current) => current === "strongest" ? "weakest" : "strongest"),
+          }]}
         />
         <div className="tile-body">
-          <ComponentBars items={rubric} />
+          <RubricScores items={rubric} />
         </div>
       </section>
 
       <section className="tile">
         <TileHeader
           color="#20745f"
-          title="Why they rank highly"
+          title="Strengths and caveats"
           description="Human-readable strengths and caveats from the qualitative assessment."
-          tooltip={{
-            kicker: "Narrative assessment",
-            description: "This card carries the plain-language interpretation, not a separate formula.",
-            rows: [
-              { icon: <Check size={14} aria-hidden="true" />, label: "Strengths", value: "Positive evidence that supports the contributor's rank" },
-              { icon: <Filter size={14} aria-hidden="true" />, label: "Caveats", value: "Known weaknesses, sparse signals, or reasons to avoid over-reading the score" },
-            ],
-          }}
+          tooltip={{ description: "Plain-language strengths and caveats from the qualitative assessment." }}
         />
         <div className="tile-body narrative-list">
           <h4>Strengths</h4>
@@ -1014,15 +1105,7 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           color="#7e2bc8"
           title="Quality signals"
           description="Contributor-level summary metrics from the analysis export."
-          tooltip={{
-            kicker: "Contributor metrics",
-            description: "These values summarize the contributor-level scoring inputs exported by the analysis pipeline.",
-            rows: [
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Weighted PR quality", value: "Impact-weighted average quality across reviewed PRs" },
-              { icon: <BarChart3 size={14} aria-hidden="true" />, label: "Consistency", value: "How reliably the reviewed PR sample cleared the quality threshold" },
-              { icon: <CircleUserRound size={14} aria-hidden="true" />, label: "Review leverage", value: "Visible review activity quality where available" },
-            ],
-          }}
+          tooltip={{ description: "Contributor-level scoring inputs exported by the analysis pipeline." }}
         />
         <div className="tile-body facts">
           <dl>
@@ -1041,15 +1124,7 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           color="#111111"
           title="Reviewed PR evidence"
           description="Representative PRs reviewed in the analysis, with quality score, work type, and summary judgment."
-          tooltip={{
-            kicker: "PR-level evidence",
-            description: "Each row links to a PR that the analysis scored for this contributor.",
-            rows: [
-              { icon: <ExternalLink size={14} aria-hidden="true" />, label: "Link target", value: "The original GitHub pull request" },
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Quality score", value: "0-100 PR quality score" },
-              { icon: <ListFilter size={14} aria-hidden="true" />, label: "Work type", value: "Classification such as reliability, migration, product, performance, infra, bugfix, or DX" },
-            ],
-          }}
+          tooltip={{ description: "Reviewed PRs with score, work type, and a link to GitHub." }}
         />
         <div className="tile-body evidence-list">
           {reviews.map((review) => (
@@ -1057,10 +1132,10 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
               <span className="pr">{formatRank(review.pr_number)}</span>
               <span className="evidence-main">
                 <span className="evidence-title">{review.pr_title}</span>
+                <WorkTypePill workType={review.work_type} />
                 <span className="why">{review.summary_judgment}</span>
               </span>
               <span className="evidence-meta">
-                <span className="tag">{review.work_type}</span>
                 <span className="score-pill">{formatNumber(review.pr_quality_score)}</span>
               </span>
             </a>
@@ -1073,15 +1148,7 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           color="#d64f2a"
           title="Review interactions"
           description="Visible review examples that informed the collaboration and review leverage portions of the analysis."
-          tooltip={{
-            kicker: "Review evidence",
-            description: "Only public GitHub review context is represented here.",
-            rows: [
-              { icon: <CircleUserRound size={14} aria-hidden="true" />, label: "Interaction", value: "Example review event or inline review comment captured in the analysis" },
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Review quality", value: "Signal strength assigned to that visible interaction" },
-              { icon: <Filter size={14} aria-hidden="true" />, label: "Limitation", value: "Private Slack, design, incident, or deleted review context is not included" },
-            ],
-          }}
+          tooltip={{ description: "Visible public GitHub review examples used by the assessment." }}
         />
         <div className="tile-body review-interactions">
           {person.review_interactions.map((interaction) => (
@@ -1099,14 +1166,7 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           color="#8f969e"
           title="Area footprint"
           description="Areas represented in this contributor's reviewed PR sample."
-          tooltip={{
-            kicker: "Reviewed areas",
-            description: "Area counts come from the PRs reviewed for this contributor.",
-            rows: [
-              { icon: <BarChart3 size={14} aria-hidden="true" />, label: "Count", value: "Number of reviewed PRs tagged with each area" },
-              { icon: <Filter size={14} aria-hidden="true" />, label: "Scope", value: "This is a sampled reviewed footprint, not all repository work by the contributor" },
-            ],
-          }}
+          tooltip={{ description: "Area counts from the reviewed PR sample, not all repository work." }}
         />
         <div className="tile-body area-list">
           {areas.map(([area, count]) => (
@@ -1123,99 +1183,35 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
 }
 
 function RawDataView({ data, table }: { data: AnalysisDashboard; table: RawTable }) {
+  const source = table === "contributors" ? data.contributors : data.reviews;
+  const title = table === "contributors" ? "Contributor quality scores JSON" : "Qualitative PR reviews JSON";
+  const description = table === "contributors"
+    ? "Raw contributor-level analysis cache used by the dashboard."
+    : "Raw PR-level qualitative review cache used by the dashboard.";
+  const sourcePath = table === "contributors"
+    ? "/data/analysis/contributor_quality_scores.json"
+    : "/data/analysis/qualitative_pr_reviews.json";
+  const json = highlightedJson(source);
+
   return (
     <section className="raw-view">
-      {table === "contributors" ? (
-        <section className="tile raw-table-tile">
-          <TileHeader
-            color="#111111"
-            title="Contributor quality scores"
-            description="Raw contributor summary export."
-            tooltip={{
-              kicker: "Raw contributor export",
-              description: "This table mirrors the contributor-level JSON file used by the dashboard.",
-              rows: [
-                { icon: <Database size={14} aria-hidden="true" />, label: "Source file", value: "contributor_quality_scores.json" },
-                { icon: <CircleUserRound size={14} aria-hidden="true" />, label: "Rows", value: `${formatNumber(data.contributors.length)} contributors` },
-                { icon: <Gauge size={14} aria-hidden="true" />, label: "Displayed fields", value: "Final quality, reviewed PR count, review leverage, ownership, and communication" },
-              ],
-            }}
-          />
-          <div className="tile-body leaderboard-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Rank</th>
-                  <th>Contributor</th>
-                  <th>Quality</th>
-                  <th>PRs</th>
-                  <th>Review quality</th>
-                  <th>Ownership</th>
-                  <th>Communication</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.contributors.map((person, index) => (
-                  <tr key={person.contributor}>
-                    <td>{formatRank(index + 1)}</td>
-                    <td><span className="name-cell"><span>{displayName(person)} <VerifiedBadge person={person} /></span>{person.name ? <small>@{person.contributor}</small> : null}</span></td>
-                    <td>{formatNumber(person.quality_score)}</td>
-                    <td>{formatNumber(person.reviewed_pr_count)}</td>
-                    <td>{pct(person.review_leverage_quality)}</td>
-                    <td>{formatNumber(person.ownership_signal)}/5</td>
-                    <td>{formatNumber(person.communication_quality_average)}/5</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      <section className="tile raw-json-tile">
+        <TileHeader
+          color={table === "contributors" ? "#111111" : "#2451f5"}
+          title={title}
+          description={description}
+          tooltip={{ description: "Direct JSON cache loaded by the dashboard. This is the audit surface for source data." }}
+        />
+        <div className="tile-body raw-json-body">
+          <div className="json-viewer-toolbar">
+            <span><FileJson size={14} aria-hidden="true" />{sourcePath}</span>
+            <span>{formatNumber(source.length)} records</span>
+            <a href={sourcePath} target="_blank" rel="noreferrer">Open JSON</a>
+            <a href={sourcePath} download>Download</a>
           </div>
-        </section>
-      ) : null}
-
-      {table === "prs" ? (
-        <section className="tile raw-table-tile">
-          <TileHeader
-            color="#2451f5"
-            title="Qualitative PR reviews"
-            description="PR-level qualitative review rows used to support contributor scoring."
-            tooltip={{
-              kicker: "Raw PR export",
-              description: "This table mirrors the PR-level qualitative review JSON file.",
-              rows: [
-                { icon: <Database size={14} aria-hidden="true" />, label: "Source file", value: "qualitative_pr_reviews.json" },
-                { icon: <ListFilter size={14} aria-hidden="true" />, label: "Rows", value: `${formatNumber(data.reviews.length)} reviewed PRs` },
-                { icon: <ExternalLink size={14} aria-hidden="true" />, label: "PR column", value: "Opens the original GitHub pull request for validation" },
-              ],
-            }}
-          />
-          <div className="tile-body leaderboard-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>PR</th>
-                  <th>Contributor</th>
-                  <th>Quality</th>
-                  <th>Type</th>
-                  <th>Merged</th>
-                  <th>Summary</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.reviews.map((review) => (
-                  <tr key={review.pr_number}>
-                    <td><a className="table-link" href={review.pr_url} target="_blank" rel="noreferrer">{formatRank(review.pr_number)}</a></td>
-                    <td>@{review.contributor}</td>
-                    <td>{formatNumber(review.pr_quality_score)}</td>
-                    <td>{review.work_type}</td>
-                    <td>{formatDateTime(review.merged_at)}</td>
-                    <td>{review.summary_judgment}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      ) : null}
+          <pre className="json-viewer" aria-label={`${title} full formatted JSON`}><code dangerouslySetInnerHTML={{ __html: json }} /></pre>
+        </div>
+      </section>
     </section>
   );
 }
@@ -1299,14 +1295,15 @@ function App() {
   const selected = routedContributorIndex >= 0 ? routedContributorIndex : 0;
   const selectedPerson = contributors[selected] ?? contributors[0];
   const pageMode = route.pageMode;
+  const maxImpact = Math.max(...contributors.map((person) => person.provisional_impact_total ?? 0), 0);
   const contributorOptions: DropdownOption<number>[] = contributors.map((person, index) => ({
     value: index,
-    label: `${formatRank(index + 1)} ${displayName(person)}`,
-    description: `${formatNumber(person.quality_score)} score - ${formatNumber(person.reviewed_pr_count)} reviewed PRs`,
+    label: `${formatRank(impactRank(person, index))} ${displayName(person)}`,
+    description: `${formatNumber(normalizedImpactScore(person, maxImpact))} impact - ${formatNumber(person.quality_score)} quality - ${formatNumber(person.reviewed_pr_count)} reviewed PRs`,
   }));
 
   const viewIcon = pageMode === "leaderboard" ? <Trophy /> : pageMode === "contributor" ? <UserRound /> : <Table2 />;
-  const contributorLeading = pageMode === "contributor" ? <RankMarker rank={selected + 1} /> : <Plus />;
+  const contributorLeading = pageMode === "contributor" ? <RankMarker rank={impactRank(selectedPerson, selected)} /> : <Plus />;
 
   const navigate = (url: string, replace = false) => {
     const current = `${window.location.pathname}${window.location.search}`;
@@ -1439,9 +1436,9 @@ function App() {
           </header>
           <div className="header-scroll-sentinel" />
           {pageMode === "leaderboard" ? (
-            <LeaderboardHome data={data} openContributor={openContributor} />
+            <LeaderboardHome data={data} openContributor={openContributor} maxImpact={maxImpact} />
           ) : pageMode === "contributor" ? (
-            <ContributorProfile data={data} person={selectedPerson} rank={selected + 1} />
+            <ContributorProfile data={data} person={selectedPerson} rank={impactRank(selectedPerson, selected)} maxImpact={maxImpact} />
           ) : (
             <RawDataView data={data} table={route.rawTable} />
           )}
