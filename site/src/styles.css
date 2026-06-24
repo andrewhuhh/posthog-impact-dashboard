@@ -259,7 +259,7 @@ p { margin: 0; }
 }
 .contributor-link {
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr) 44px;
+  grid-template-columns: 36px 33px minmax(0, 1fr) 44px;
   align-items: center;
   gap: 8px;
   min-height: 34px;
@@ -279,13 +279,14 @@ p { margin: 0; }
   font-weight: 820;
 }
 .contributor-link b {
+  grid-column: 3;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 13px;
 }
 .contributor-link small {
-  grid-column: 2;
+  grid-column: 3;
   margin-top: -5px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -294,10 +295,35 @@ p { margin: 0; }
   font-size: 11px;
 }
 .contributor-link em {
+  grid-column: 4;
+  grid-row: 1 / span 2;
   color: var(--muted);
   font-size: 13px;
   font-style: normal;
   text-align: right;
+}
+.contributor-avatar {
+  display: inline-grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-muted);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+}
+.contributor-avatar img,
+img.contributor-avatar {
+  object-fit: cover;
+}
+.contributor-avatar.xs {
+  width: 30px;
+  height: 30px;
+}
+.contributor-avatar.sm {
+  width: 39px;
+  height: 39px;
 }
 
 .content-shell {
@@ -849,6 +875,15 @@ h1 {
   color: var(--orange-dark);
 }
 .rank, .handle, .score strong { font-family: var(--font-heading); }
+.person-name-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.person-name-line > span {
+  min-width: 0;
+}
 .handle { font-weight: 760; font-size: 16px; margin-bottom: 4px; }
 .subhandle {
   margin-top: -2px;
@@ -908,13 +943,20 @@ h1 {
 .selected-handle {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 9px;
   justify-self: start;
   color: var(--ink);
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 760;
   text-decoration: none;
+}
+.selected-handle img {
+  width: 51px;
+  height: 51px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-muted);
 }
 .selected-handle span {
   display: grid;
@@ -929,10 +971,9 @@ h1 {
   font-size: 12px;
   font-weight: 500;
 }
-.selected-handle:hover { text-decoration: underline; }
-.selected-handle svg {
-  color: var(--muted);
-  stroke-width: 2.2;
+.selected-handle:hover b {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .selected-facts {
   display: grid;

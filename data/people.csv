@@ -1,212 +1,211 @@
-name,login,impact_score,prs_merged,ship_points,review_points,reviewed_prs,bug_points,feature_points,perf_security_points,product_breadth,top_area
-"Tom Owers",Gilbert09,87.5,626,3162.0,94.8,176,2611.2,2510.8,1573.4,6,Data pipeline
-"Paul D'Ambra",pauldambra,85.5,506,2419.1,102.0,200,1485.7,1786.9,862.9,6,Frontend
-"Raúl Negrón-Otero",rnegron,82.0,216,1015.8,119.2,223,721.5,769.8,448.4,6,Infrastructure
-"Julian Bez",webjunkie,81.4,239,1218.1,93.2,184,788.8,943.9,409.1,6,Backend
-"Sam Pennington",sampennington,81.0,349,1688.2,65.9,125,991.7,1395.5,167.0,6,Frontend
-"Andrew Maguire",andrewm4894,80.2,280,1294.2,76.5,141,812.9,1116.9,287.9,6,Backend
-"Georgiy Tarasov",skoob13,79.6,189,879.9,83.1,158,612.5,690.7,294.6,6,Product analytics
-,lricoy,78.0,142,681.2,69.9,129,392.7,497.4,330.7,6,Product analytics
-,MarconLP,77.4,90,476.5,123.9,226,358.5,356.1,215.4,6,Data pipeline
-,rafaeelaudibert,77.0,122,596.1,110.2,219,329.6,452.3,170.5,6,Frontend
-,robbie-c,75.7,154,782.4,20.5,43,623.6,625.0,464.3,6,Product analytics
-,joshsny,75.6,117,508.5,107.4,199,223.0,284.4,111.7,6,Backend
-,haacked,75.3,104,534.8,41.3,87,394.6,417.0,305.0,6,Data pipeline
-,gantoine,75.2,63,304.9,176.7,335,205.2,217.6,89.6,6,Frontend
-,TueHaulund,75.2,111,560.2,47.6,95,421.1,408.7,138.8,6,Backend
-,MattBro,75.1,111,626.3,21.1,43,492.5,528.6,469.5,6,Product analytics
-,vdekrijger,74.5,94,493.6,55.4,103,416.3,425.7,110.3,6,Product analytics
-,cat-ph,74.4,100,486.9,52.5,98,435.7,406.1,99.9,6,Backend
-,mendral-app,74.0,152,653.5,45.9,131,577.5,348.9,178.4,5,Frontend
-"Matt Pua",MattPua,73.5,145,658.4,43.5,82,355.3,482.5,79.3,6,Frontend
-,ablaszkiewicz,73.2,72,354.8,52.1,97,301.7,219.5,82.8,6,Frontend
-,VojtechBartos,73.1,103,509.1,39.1,73,277.0,402.7,214.6,6,Backend
-,fercgomes,73.0,92,439.6,43.8,97,234.7,369.8,168.9,6,Product analytics
-,dmarchuk,72.9,91,419.8,47.0,88,347.4,304.7,63.2,6,Frontend
-"Jon McCallum",jonmcwest,72.8,169,809.4,23.4,44,458.2,698.5,85.3,6,Backend
-,posthog,72.8,251,1232.9,11.5,33,1029.7,994.1,251.0,5,Product analytics
-,Piccirello,72.7,82,325.9,70.2,136,131.3,150.3,86.3,6,Infrastructure
-,arthurdedeus,72.7,91,470.9,46.7,86,274.0,369.3,82.4,6,Frontend
-,richardsolomou,72.7,70,363.6,47.6,96,277.3,323.2,124.6,6,Infrastructure
-,tatoalo,72.5,93,426.3,79.4,152,196.7,183.1,91.3,6,Backend
-,sakce,72.5,116,531.2,34.0,64,284.9,363.8,95.9,6,Backend
-,thmsobrmlr,72.4,140,650.2,36.9,70,384.1,409.6,62.8,6,Product analytics
-,adamleithp,72.1,96,451.4,48.1,90,324.5,359.7,180.3,5,Frontend
-,a-lider,72.1,78,394.3,37.2,73,246.2,271.9,149.4,6,Product analytics
-,lucasheriques,71.9,74,391.9,37.8,69,270.7,339.9,69.1,6,Product analytics
-,veryayskiy,71.8,131,559.1,27.7,51,227.9,332.6,24.5,6,Backend
-,yasen-posthog,71.8,76,390.9,35.1,67,223.3,312.4,103.7,6,Backend
-,gustavohstrassburger,71.6,67,351.8,35.2,64,207.1,270.6,122.3,6,Product analytics
-,hpouillot,71.5,75,376.6,45.1,89,346.9,299.3,81.2,6,Data pipeline
-,nickbest-ph,71.2,96,455.0,33.0,65,231.5,323.9,120.5,6,Data pipeline
-,eli-r-ph,70.9,76,341.6,52.8,104,169.5,246.7,82.2,6,Data pipeline
-,Twixes,70.9,72,330.5,30.8,60,187.5,192.6,103.8,6,Product analytics
-,jurajmajerik,70.5,118,519.9,46.5,85,255.2,341.8,156.0,5,Product analytics
-"Daniel RC",danielcarletti,70.5,109,517.3,42.3,85,403.1,408.8,96.1,5,Data pipeline
-,benjackwhite,70.3,82,389.9,22.3,43,217.5,259.0,181.2,6,Backend
-,mariusandra,70.2,69,342.8,61.9,118,219.0,186.4,8.7,6,Product analytics
-,carlos-marchal-ph,70.2,66,338.5,27.4,52,257.3,257.1,77.8,6,Frontend
-,ReeceJones,69.8,59,302.5,36.7,70,197.3,216.1,52.0,6,Product analytics
-,meikelmosby,69.8,60,277.0,35.3,66,209.4,209.9,90.7,6,Frontend
-,gesh,69.7,85,378.7,26.5,50,229.8,217.7,33.4,6,Frontend
-,frankh,69.4,65,303.4,37.0,69,182.9,163.9,65.2,6,Frontend
-,andyzzhao,68.6,64,300.1,24.5,47,129.6,237.4,128.8,6,Data pipeline
-,DanielVisca,68.5,82,374.8,22.4,41,187.6,262.1,145.4,6,Frontend
-,jose-sequeira,68.2,74,331.1,30.6,61,197.1,259.0,96.3,5,Data pipeline
-,jabahamondes,68.2,43,231.5,21.1,39,146.6,213.2,90.3,6,Backend
-,jordanm-posthog,68.0,86,380.7,18.3,34,118.1,288.6,8.6,6,Product analytics
-,dmarticus,67.8,70,379.9,44.7,85,255.1,333.7,67.3,5,Product analytics
-,tomasfarias,67.8,62,273.7,25.2,53,175.7,165.3,49.2,6,Backend
-,georgemunyoro,67.6,46,239.3,55.9,102,224.6,190.0,52.5,5,Product analytics
-,andehen,67.2,85,394.6,27.5,51,214.6,314.8,93.7,5,Product analytics
-,orian,66.6,53,246.2,28.6,57,81.1,159.7,18.7,6,Data pipeline
-,pl,66.0,42,196.4,19.8,40,146.5,167.2,80.2,6,Data pipeline
-,mp-hog,65.9,69,332.2,22.9,42,215.6,278.5,26.2,5,Backend
-,rodrigoi,65.7,72,362.1,12.7,26,186.4,301.7,97.6,5,Product analytics
-,ksvat,65.3,94,408.5,25.5,51,214.5,286.0,60.6,4,Frontend
-,sortafreel,65.2,37,180.0,35.6,69,112.4,96.0,34.3,6,Backend
-,cvolzer3,64.9,57,261.0,12.1,23,178.7,187.1,72.4,6,Frontend
-,oliverb123,64.5,34,149.8,28.7,55,99.7,56.5,13.0,6,Backend
-,z0br0wn,64.5,63,245.2,28.2,60,129.6,160.0,63.0,5,Data pipeline
-,rossgray,64.4,41,201.2,22.7,46,130.8,156.6,29.0,6,Product analytics
-,fasyy612,63.9,52,235.6,40.7,81,127.4,153.3,0.0,5,Frontend
-,Radu-Raicea,63.7,28,130.9,58.9,121,63.9,85.7,16.1,6,Frontend
-,patricio-posthog,63.6,27,123.3,21.1,39,60.4,89.9,54.2,6,Data pipeline
-,feliperalmeida,62.9,25,106.2,26.7,50,73.5,55.7,40.8,6,Frontend
-,matheus-vb,62.8,31,173.9,23.8,44,124.8,140.4,124.3,4,Data pipeline
-,brandonleung,62.2,26,124.6,20.5,39,67.2,74.4,60.6,6,Backend
-,estefaniarabadan,62.0,40,196.7,19.8,45,168.5,130.0,34.7,5,Data pipeline
-,andrewjmcgehee,61.9,45,199.9,25.1,50,112.5,73.9,5.6,5,Backend
-,aspicer,61.1,38,193.9,6.6,12,133.9,120.7,59.9,6,Product analytics
-,arnohillen,59.8,27,134.3,13.2,24,115.4,108.7,24.0,6,Data pipeline
-,k11kirky,56.6,18,84.3,10.3,19,55.2,63.8,33.0,5,Backend
-,EDsCODE,55.9,31,148.9,5.5,10,100.1,131.8,13.0,6,Backend
-,marandaneto,55.4,18,63.0,34.6,65,24.2,29.7,4.0,5,Infrastructure
-,christiaan-ph,54.6,45,215.2,0.0,0,200.1,191.6,25.2,5,Product analytics
-,fuziontech,54.2,32,139.1,8.8,16,117.2,79.1,25.0,4,Backend
-,dustinbyrne,52.3,9,49.1,12.6,24,43.8,34.3,23.6,5,Infrastructure
-,rorylshanks,51.6,12,52.9,44.9,85,26.0,32.5,12.5,4,Product analytics
-,luke-belton,50.4,39,163.2,0.0,0,105.7,113.1,31.3,5,Frontend
-,abhischekt,49.3,16,82.0,7.4,15,75.5,56.7,12.7,3,Product analytics
-,charlesvien,49.3,12,62.5,7.1,13,17.6,49.6,45.9,4,Backend
-,xljones,49.2,28,121.1,1.7,3,100.0,88.3,27.1,4,Product analytics
-,mayteio,49.1,17,82.5,9.7,18,63.2,73.1,17.7,4,Backend
-,havenbarnes,48.2,18,83.6,9.2,19,41.2,51.5,6.5,4,Product analytics
-,pawel-cebula,47.7,11,52.0,15.4,35,34.2,37.0,5.7,4,Product analytics
-,bciaraldi,47.4,16,73.5,11.9,22,71.1,52.5,16.4,2,Backend
-,nicowaltz,46.9,16,67.6,2.4,5,13.2,42.9,0.0,5,Product analytics
-,slshults,46.1,15,87.2,2.0,4,87.2,87.2,26.0,3,Frontend
-,raquelmsmith,46.1,11,56.8,2.4,5,25.4,43.1,9.1,5,Product analytics
-,clr182,44.6,16,73.3,1.1,2,46.7,31.0,0.0,4,Product analytics
-,ryans-posthog,44.1,12,65.8,3.1,6,40.3,55.8,23.1,3,Backend
-,darkopia,44.0,21,91.5,0.0,0,84.2,74.0,0.0,4,Product analytics
-,turnipdabeets,43.5,12,49.6,8.2,15,20.5,46.5,3.9,3,Data pipeline
-,adboio,43.1,8,39.6,3.8,7,16.5,39.6,11.0,4,Product analytics
-,posthog-js-upgrader,41.6,71,163.8,0.0,0,0.0,0.0,0.0,1,Frontend
-,willwearing,40.9,6,32.3,0.6,1,11.9,26.8,12.0,5,Frontend
-,rubychilds,40.4,10,47.6,0.0,0,22.7,47.6,6.0,5,Infrastructure
-,timgl,39.6,7,36.0,1.1,2,27.9,36.0,18.1,3,Product analytics
-,scheduled-actions-posthog,39.0,72,161.2,0.0,0,0.0,0.0,0.0,0,Other
-,mcoll-posthog,38.9,9,46.9,1.1,2,26.5,31.5,0.0,4,Data pipeline
-,inkeep,38.3,22,61.3,0.0,0,6.1,58.3,24.0,2,Backend
-,jonathanlab,38.2,6,27.6,7.5,14,0.0,25.4,6.5,3,Backend
-,gewenyu99,36.9,4,18.5,2.7,6,13.1,14.0,10.5,3,Product analytics
-,eleftheriatrivyzaki,36.8,7,30.3,0.6,1,28.9,25.7,10.9,3,Frontend
-,joethreepwood,36.6,7,31.6,1.1,2,15.7,31.6,16.4,3,Product analytics
-,Z3r0Sum,36.0,2,13.0,2.2,4,13.0,13.0,13.0,3,Backend
-,ioannisj,35.9,9,25.2,3.6,7,12.3,17.1,0.0,2,Product analytics
-,mjwarren3,34.9,8,41.6,0.0,0,27.8,36.5,5.2,3,Product analytics
-,lmenezes,33.9,8,35.5,5.5,10,0.0,29.6,0.0,2,Backend
-,annaszell,33.9,3,17.2,0.0,0,12.4,10.8,0.0,5,Frontend
-,daniloc,33.7,6,35.8,1.1,2,13.0,30.1,18.6,2,Backend
-,langesven,33.5,8,31.9,1.7,3,15.2,22.7,18.6,1,Infrastructure
-,ordehi,33.4,7,33.9,0.0,0,15.5,26.6,5.6,3,Product analytics
-,fivestarspicy,32.6,6,31.6,0.0,0,9.2,31.6,6.5,3,Frontend
-,kyleswank,31.2,5,24.7,0.0,0,24.7,16.7,6.5,2,Backend
-,benben,30.8,3,15.2,4.4,8,15.2,4.8,0.0,2,Backend
-,jghoman,30.1,1,4.7,13.8,25,4.7,0.0,4.7,1,Backend
-,okxint,29.2,5,19.6,0.0,0,19.6,8.1,0.0,2,Product analytics
-,sinan-ku,29.2,5,20.8,0.6,1,18.8,18.8,0.0,2,Frontend
-,HaynesPostHog,28.3,5,23.7,0.0,0,23.7,19.2,5.8,1,Frontend
-,zaniluca,27.4,3,14.3,0.0,0,8.1,6.2,0.0,3,Product analytics
-,danazou,26.9,3,15.3,0.0,0,9.6,12.0,5.7,2,Product analytics
-,sarahxsanders,26.5,3,11.3,0.6,1,8.8,0.0,0.0,2,Product analytics
-,annikaschmid,26.2,2,9.7,0.0,0,0.0,9.7,0.0,4,Backend
-,Basit-Balogun10,25.9,1,6.5,0.0,0,6.5,6.5,6.5,2,Product analytics
-,bigjohnn1,25.9,1,6.5,0.0,0,6.5,0.0,6.5,2,Product analytics
-,leonposthog,25.2,1,6.5,0.6,1,6.5,6.5,0.0,3,Product analytics
-,andre347,25.1,4,15.7,0.0,0,8.1,12.1,4.5,1,Product analytics
-,tpgilmore,25.0,1,5.3,4.4,8,0.0,5.3,0.0,3,Product analytics
-,seanpem,24.9,2,12.2,0.0,0,12.2,0.0,0.0,2,Frontend
-,tests-posthog,23.9,9,20.5,0.0,0,0.0,0.0,0.0,0,Other
-,oddgarden6465,23.2,1,6.5,0.0,0,6.5,6.5,6.5,1,Backend
-,Kenji-K,23.2,1,6.5,0.0,0,6.5,6.5,6.5,1,Product analytics
-,praneya0028,23.2,1,6.5,0.0,0,6.5,6.5,6.5,1,Product analytics
-,Daesgar,23.0,2,6.2,2.2,4,4.2,0.0,4.2,0,Data pipeline
-,bill-ph,22.6,1,5.6,3.6,7,5.6,5.6,0.0,1,Backend
-,greptile-apps,22.0,0,0.0,1558.4,4452,0.0,0.0,0.0,0,Other
-,mango766,21.2,1,6.4,0.0,0,6.4,6.4,0.0,2,Backend
-,igennova,20.9,1,6.0,0.0,0,6.0,6.0,0.0,2,Backend
-,aaug1-unify,20.5,1,6.5,0.0,0,6.5,6.5,6.5,0,Frontend
-,ceyniustranberg,20.5,2,7.1,0.6,1,4.4,7.1,0.0,1,Unknown
-,phillram,20.4,2,6.7,0.0,0,6.7,0.0,4.0,0,Unknown
-,vmaineng,20.3,2,6.6,0.0,0,6.6,0.0,3.9,0,Product analytics
-,abigailbramble,20.3,2,6.8,3.1,6,3.5,6.8,0.0,0,Frontend
-,developers-universe-1,20.2,1,4.8,0.0,0,4.8,0.0,0.0,2,Product analytics
-,ricardothe3rd,19.5,2,9.2,0.0,0,4.2,9.2,0.0,1,Product analytics
-,nakshatra-nahar,18.4,1,6.2,0.0,0,6.2,6.2,0.0,1,Product analytics
-,clickhouse-sync-posthog,18.1,3,6.3,0.0,0,0.0,0.0,0.0,1,Infrastructure
-,SafinMahmud,17.9,1,5.4,0.0,0,5.4,0.0,0.0,1,Frontend
-,jaydeep-pipaliya,17.9,1,5.4,0.0,0,5.4,5.4,0.0,1,Data pipeline
-,Akash504-ai,17.8,1,5.3,0.0,0,5.3,5.3,0.0,1,Frontend
-,camerondeleone,17.5,1,5.7,0.0,0,0.0,5.7,0.0,2,Frontend
-,afsuyadi,17.5,1,4.7,0.0,0,4.7,4.7,0.0,1,Infrastructure
-,copilot-pull-request-reviewer,17.4,0,0.0,338.1,966,0.0,0.0,0.0,0,Other
-,graphite-app,17.4,0,0.0,333.2,952,0.0,0.0,0.0,0,Other
-,seangeiger,17.3,1,4.4,0.0,0,4.4,0.0,0.0,1,Product analytics
-,sinthetix,17.3,1,5.2,0.0,0,0.0,5.2,0.0,2,Data pipeline
-,kliment-slice,17.1,1,4.1,0.0,0,4.1,0.0,0.0,1,Product analytics
-,stamphog,16.6,0,0.0,256.9,734,0.0,0.0,0.0,0,Other
-,matt-metivier,16.6,1,1.4,6.6,12,0.0,0.0,0.0,0,Unknown
-,naji247,15.7,2,8.2,0.0,0,3.3,4.9,0.0,0,Other
-,chatgpt-codex-connector,15.6,0,0.0,183.7,525,0.0,0.0,0.0,0,Other
-,brandon-julio-t,15.3,1,5.4,0.0,0,5.4,5.4,0.0,0,Other
-,veria-ai,15.1,0,0.0,153.6,439,0.0,0.0,0.0,0,Other
-,sbrin,15.0,1,5.9,0.0,0,0.0,5.9,0.0,1,Data pipeline
-,wiz-7ad640923b,14.9,1,3.5,0.3,1,3.5,0.0,0.0,0,Other
-,shauryapednekar,14.9,1,4.9,0.0,0,4.9,4.9,0.0,0,Other
-,harihran-del,14.8,1,4.8,0.0,0,4.8,4.8,0.0,0,Product analytics
-,mattiagaggi,14.6,1,4.4,0.0,0,4.4,4.4,0.0,0,Product analytics
-,alex-kozh,14.6,1,4.4,0.0,0,4.4,4.4,0.0,0,Infrastructure
-,rabumaabraham,14.5,1,4.2,0.0,0,4.2,4.2,0.0,0,Unknown
-,lucashflores,14.4,1,4.0,0.0,0,4.0,4.0,0.0,0,Product analytics
-,sipa-echo-zaoa,14.3,1,3.9,0.0,0,3.9,3.9,0.0,0,Other
-,ptrkstr,14.3,1,3.9,0.0,0,3.9,3.9,0.0,0,Other
-,hex-security-app,14.2,0,0.0,114.8,328,0.0,0.0,0.0,0,Other
-,zugdev,14.2,1,3.7,0.0,0,3.7,3.7,0.0,0,Unknown
-,a96lex,14.1,1,3.6,0.0,0,3.6,0.0,0.0,0,Other
-,charlescook-ph,13.9,1,4.1,0.0,0,0.0,4.1,0.0,1,Product analytics
-,MichaelKutsch-ph,13.7,1,4.5,1.1,2,0.0,4.5,0.0,0,Infrastructure
-,ericls,13.5,1,2.6,0.0,0,2.6,0.0,0.0,0,Unknown
-,adityachaudhary99,13.5,1,2.6,0.0,0,2.6,0.0,0.0,0,Unknown
-,erezrokah,11.4,1,4.5,0.0,0,0.0,4.5,0.0,0,Infrastructure
-,hector-r-759,10.9,1,3.7,0.0,0,0.0,3.7,0.0,0,Product analytics
-,jamesefhawkins,10.8,1,1.2,0.0,0,0.0,0.0,0.0,0,Docs
-,archiewood,10.6,1,3.1,0.0,0,0.0,3.1,0.0,0,Product analytics
-,smallbrownbike,10.3,1,1.6,0.0,0,0.0,0.0,0.0,0,Docs
-,Muskaan436,10.3,1,2.6,0.0,0,0.0,2.6,0.0,0,Unknown
-,github-advanced-security,8.5,0,0.0,16.1,46,0.0,0.0,0.0,0,Other
-,abheek9,4.0,0,0.0,2.8,5,0.0,0.0,0.0,0,Other
-,copilot-swe-agent,3.7,0,0.0,2.5,7,0.0,0.0,0.0,0,Other
-,edwinyjlim,3.3,0,0.0,2.0,4,0.0,0.0,0.0,0,Other
-,k33lan,2.9,0,0.0,1.7,3,0.0,0.0,0.0,0,Other
-,cursor,2.6,0,0.0,1.4,4,0.0,0.0,0.0,0,Other
-,ShashankFC,2.1,0,0.0,1.0,3,0.0,0.0,0.0,0,Other
-,codeCraft-Ritik,1.6,0,0.0,0.7,2,0.0,0.0,0.0,0,Other
-,mattfield,1.3,0,0.0,0.6,1,0.0,0.0,0.0,0,Other
-,cleo-pleurodon,1.3,0,0.0,0.6,1,0.0,0.0,0.0,0,Other
-,cohenroy,1.3,0,0.0,0.6,1,0.0,0.0,0.0,0,Other
-,danielxnj,1.3,0,0.0,0.6,1,0.0,0.0,0.0,0,Other
-,MarceColl,0.9,0,0.0,0.3,1,0.0,0.0,0.0,0,Other
-,g2k4qpzj5w-afk,0.9,0,0.0,0.3,1,0.0,0.0,0.0,0,Other
-,harsh21234i,0.9,0,0.0,0.3,1,0.0,0.0,0.0,0,Other
+rank,name,login,quality_score,reviewed_pr_count,recent_merged_pr_count,high_confidence_impact_count,confidence,coverage_tier,impact_rank,provisional_impact_total
+1,Tom Owers,Gilbert09,85.9,8,691,7,high,deep_top_5,1,3793.57
+2,Paul D'Ambra,pauldambra,78.6,8,717,1,high,deep_top_5,2,3314.8
+3,Andrew Maguire,andrewm4894,87.3,8,507,5,high,deep_top_5,3,2470.08
+4,Sam Pennington,sampennington,83.9,8,460,6,high,deep_top_5,4,2178.03
+5,Julian Bez,webjunkie,84.3,8,398,6,high,deep_top_5,5,1784.26
+6,Georgiy Tarasov,skoob13,74.6,5,286,2,high,top_10,6,1352.51
+7,Jon McCallum,jonmcwest,76.9,5,275,2,high,top_10,7,1255.21
+8,Raúl Negrón-Otero,rnegron,74.5,5,234,3,high,top_10,8,1156.86
+9,Robbie,robbie-c,87,5,239,4,high,top_10,9,1151.09
+10,Rafael Audibert,rafaeelaudibert,77.2,5,255,2,high,top_10,10,1074.7
+11,Jovan Sakovic,sakce,72.4,4,236,2,medium,top_25,11,1041.85
+12,Phil Haack,haacked,91.2,4,220,4,medium,top_25,12,987.09
+13,Matt Pua,MattPua,83.5,4,217,3,medium,top_25,13,984.48
+14,Thomas Obermüller,thmsobrmlr,85.1,4,226,4,medium,top_25,14,952.12
+15,Lucas Ricoy,lricoy,79.1,4,201,2,medium,top_25,15,919.79
+16,Matt Brooker,MattBro,88.6,4,191,4,medium,top_25,16,905.65
+17,Alex V,veryayskiy,75.9,4,243,4,medium,top_25,17,851.67
+18,Tue Haulund,TueHaulund,84.9,4,172,3,medium,top_25,18,807.66
+19,Eli Reisman,eli-r-ph,82.1,4,180,2,medium,top_25,19,806.96
+20,Adam Leith,adamleithp,75.6,4,205,3,medium,top_25,20,797.97
+21,Dylan Martin,dmarticus,87.2,4,172,4,medium,top_25,21,756.93
+22,Arthur Moreira de Deus,arthurdedeus,80.4,4,162,2,medium,top_25,22,756.43
+23,Vasco de Krijger,vdekrijger,82.5,4,157,3,medium,top_25,23,751.71
+24,Juraj Majerik,jurajmajerik,79.8,4,170,3,medium,top_25,24,745.84
+25,Joshua Snyder,joshsny,74.4,4,176,3,medium,top_25,25,718.56
+26,Jordan Mryyan,jordanm-posthog,70.1,2,151,1,low,mid_tier,26,681.66
+27,Yasen,yasen-posthog,80.6,2,156,2,low,mid_tier,27,680.06
+28,José Sequeira,jose-sequeira,78.9,2,153,1,low,mid_tier,28,674.38
+29,Reece Jones,ReeceJones,79.2,2,148,2,low,mid_tier,29,663.75
+30,Anders,andehen,76,2,139,1,low,mid_tier,30,638.6
+31,Daniel RC,danielcarletti,80.6,2,119,1,low,mid_tier,31,625.67
+32,Fernando Gomes,fercgomes,76.7,2,134,0,low,mid_tier,32,619.43
+33,Tom Piccirello,Piccirello,82.8,2,170,2,low,mid_tier,33,610.68
+34,Vojta Bartoš,VojtechBartos,72.2,2,129,2,low,mid_tier,34,604.91
+35,Nick Best,nickbest-ph,66.8,2,147,1,low,mid_tier,35,603.88
+36,Gustavo H. Strassburger,gustavohstrassburger,84,2,131,2,low,mid_tier,36,600.1
+37,Michael Matloka,Twixes,77.5,2,146,0,low,mid_tier,37,591.09
+38,Kim Svatos Dugan,ksvat,80,2,121,2,low,mid_tier,38,589.18
+39,Marcel Poelker,mp-hog,77.4,2,133,1,low,mid_tier,39,583.09
+40,Aleksander Błaszkiewicz,ablaszkiewicz,80.5,2,140,2,low,mid_tier,40,578.9
+41,Adam Bowker,adboio,67,2,138,1,low,mid_tier,41,578.76
+42,Alessandro Pogliaghi,tatoalo,77.2,2,144,1,low,mid_tier,42,577.32
+43,Rodrigo Iloro,rodrigoi,67.6,2,122,1,low,mid_tier,43,556.99
+44,Georgis Andonis,gesh,78,2,124,1,low,mid_tier,44,552.43
+45,Hugues Pouillot,hpouillot,78.2,2,127,1,low,mid_tier,45,542.93
+46,Marcus Hof,MarconLP,80.7,2,113,2,low,mid_tier,46,542.56
+47,Richard Solomou,richardsolomou,78.6,2,111,1,low,mid_tier,47,536.45
+48,Marius Andra,mariusandra,84.6,2,141,2,low,mid_tier,48,536.02
+49,Frank Hamand,frankh,76.9,2,110,1,low,mid_tier,49,535.18
+50,Alex Lider,a-lider,82.4,2,118,1,low,mid_tier,50,516.89
+51,Carlos Marchal,carlos-marchal-ph,87,2,108,2,low,mid_tier,51,513.03
+52,Catalin Irimie,cat-ph,81.4,2,104,2,low,mid_tier,52,512.48
+53,Meikel Ratz,meikelmosby,75.4,2,118,1,low,mid_tier,53,498.11
+54,Ben White,benjackwhite,79.8,2,107,2,low,mid_tier,54,495.77
+55,Tomás Farías Santana,tomasfarias,67.7,2,106,1,low,mid_tier,55,486.78
+56,Daniel Marchuk,dmarchuk,78.9,2,102,1,low,mid_tier,56,477.29
+57,Andy Zhao,andyzzhao,76,2,106,1,low,mid_tier,57,475.96
+58,andrew j. mcgehee,andrewjmcgehee,74.6,2,120,1,low,mid_tier,58,472.75
+59,Javier Bahamondes,jabahamondes,79.5,2,103,2,low,mid_tier,59,455.81
+60,Hayne Ryu,fasyy612,79.7,2,99,2,low,mid_tier,60,454.25
+61,Lucas Faria,lucasheriques,78.7,2,99,1,low,mid_tier,61,448.68
+62,Daniel Visca,DanielVisca,55.8,2,82,1,low,mid_tier,62,418.25
+63,Georges-Antoine Assi,gantoine,77.5,2,90,1,low,mid_tier,63,412.8
+64,Ross,rossgray,78.4,2,89,1,low,mid_tier,64,409.54
+65,Paweł Ledwoń,pl,79.7,2,96,2,low,mid_tier,65,387.73
+66,George Munyoro,georgemunyoro,76.2,2,82,1,low,mid_tier,66,374.57
+67,estefania,estefaniarabadan,88.8,2,84,2,low,mid_tier,67,362.03
+68,James Greenhill,fuziontech,75.8,2,73,1,low,mid_tier,68,360.01
+69,Radu Raicea,Radu-Raicea,79.9,2,74,2,low,mid_tier,69,352
+70,Paweł Szczur,orian,76.6,2,79,1,low,mid_tier,70,345.52
+71,Chris Volzer,cvolzer3,69,2,78,1,low,mid_tier,71,342.13
+72,Luke Belton,luke-belton,67.2,2,83,0,low,mid_tier,72,339.27
+73,Christiaan Hendriksen,christiaan-ph,72.5,2,66,2,low,mid_tier,73,326.83
+74,Zach Brown,z0br0wn,77.4,2,83,1,low,mid_tier,74,325.64
+75,Oliver Browne,oliverb123,76.3,2,84,1,low,mid_tier,75,307.81
+76,Haven,havenbarnes,77.9,2,84,1,low,mid_tier,76,305.3
+77,Alex Lebedev,sortafreel,82.4,2,65,2,low,mid_tier,77,294.7
+78,Emanuele Capparelli,kappa90,82.2,2,64,2,low,mid_tier,78,266.3
+79,Matheus Batista,matheus-vb,85.4,2,56,2,low,mid_tier,79,252.76
+80,Sandy Spicer,aspicer,80.2,2,54,2,low,mid_tier,80,241.08
+81,Patricio,patricio-posthog,72.2,2,50,2,low,mid_tier,81,226.84
+82,Eric Duong,EDsCODE,80.2,2,40,2,low,mid_tier,82,203.73
+83,Ben Lea,darkopia,54.9,2,32,0,low,mid_tier,83,157.11
+84,Abhischek,abhischekt,82.4,2,34,2,low,mid_tier,84,155.21
+85,Anirudh Pillai,anirudhpillai,67.3,2,38,1,low,mid_tier,85,154
+86,Xander,xljones,69.1,2,31,1,low,mid_tier,86,147.9
+87,Arno Hillen,arnohillen,72.9,2,27,2,low,mid_tier,87,142.87
+88,Christian Rafferty,clr182,68.2,2,35,1,low,mid_tier,88,140.3
+89,Joshua Ordehi,ordehi,66.1,2,33,0,low,mid_tier,89,138.9
+90,Leonardo Menezes,lmenezes,72.9,2,39,2,low,mid_tier,90,136
+91,Brandon,brandonleung,76,2,26,0,low,mid_tier,91,132.14
+92,Felipe Rosa de Almeida,feliperalmeida,79.7,2,26,1,low,mid_tier,92,127.23
+93,Pawel Cebula,pawel-cebula,79,2,30,1,low,mid_tier,93,125.98
+94,Peter Kirkham,k11kirky,75.3,2,26,1,low,mid_tier,94,125.15
+95,Bryan Ciaraldi,bciaraldi,72.2,2,27,2,low,mid_tier,95,124.28
+96,Raquel Smith,raquelmsmith,72,2,25,2,low,mid_tier,96,111.36
+97,Steven Shults,slshults,72.2,2,22,2,low,mid_tier,97,106.88
+98,Harley Alexander,mayteio,80.6,2,17,2,low,mid_tier,98,95.77
+99,Manoel Aranda Neto,marandaneto,79.2,2,23,0,low,mid_tier,99,95.24
+100,Nicholas Waltz,nicowaltz,72.1,2,21,2,low,mid_tier,100,90.01
+101,Dustin Byrne,dustinbyrne,81.7,1,21,1,low,long_tail,101,84.89
+102,Daniel Escribano,Daesgar,72.8,1,25,0,low,long_tail,102,84.5
+103,Charles Vien,charlesvien,71.2,1,17,1,low,long_tail,103,81.85
+104,timgl,timgl,67.8,1,16,0,low,long_tail,104,69.82
+105,Sarah Sanders,sarahxsanders,68.2,1,18,1,low,long_tail,105,62.4
+106,Rory Shanks,rorylshanks,79.2,1,13,1,low,long_tail,106,62.01
+107,Anna Garcia,turnipdabeets,69,1,12,1,low,long_tail,107,60.24
+108,Jonathan Mieloo,jonathanlab,74.2,1,14,0,low,long_tail,108,60
+109,Ioannis J,ioannisj,78,1,12,1,low,long_tail,109,58.73
+110,,ryans-posthog,69.6,1,12,1,low,long_tail,110,56.4
+111,Daniel,danielxnj,78.7,1,13,1,low,long_tail,111,54.9
+112,Odin Kammerloher,odin-posthog,42,1,16,0,low,long_tail,112,53.7
+113,ruby childs,rubychilds,71.4,1,10,1,low,long_tail,113,53.51
+114,Mike Warren,mjwarren3,66,1,8,0,low,long_tail,114,46.05
+115,Vincent (Wen Yu) Ge,gewenyu99,64.8,1,11,0,low,long_tail,115,45.8
+116,Danilo Campos,daniloc,80.6,1,10,1,low,long_tail,116,43.97
+117,Sven Lange,langesven,68.5,1,10,1,low,long_tail,117,43.12
+118,Joe Martin,joethreepwood,78.4,1,8,1,low,long_tail,118,38.29
+119,Marce Coll,mcoll-posthog,64.6,1,9,0,low,long_tail,119,36.32
+120,Eleftheria Trivyzaki,eleftheriatrivyzaki,67.6,1,7,0,low,long_tail,120,34.5
+121,coryslater,fivestarspicy,67.3,1,7,0,low,long_tail,121,32.8
+122,,okxint,68.1,1,5,0,low,long_tail,122,28.86
+123,willwearing,willwearing,71.9,1,6,1,low,long_tail,123,28.2
+124,Michi,MichaelKutsch-ph,73.7,1,6,0,low,long_tail,124,26.7
+125,Andre de Vries,andre347,71.4,1,5,1,low,long_tail,125,26.38
+126,Kyle Swank,kyleswank,70.5,1,6,1,low,long_tail,126,25.42
+127,,HaynesPostHog,68.1,1,5,0,low,long_tail,127,23.74
+128,Edwin Lim,edwinyjlim,48,1,6,0,low,long_tail,128,21
+129,Sinan Kucukkoseler,sinan-ku,76.4,1,5,1,low,long_tail,129,19.92
+130,Anna Szell,annaszell,69.8,1,4,1,low,long_tail,130,18.48
+131,Benjamin Knofe-Vider,benben,72.7,1,3,1,low,long_tail,131,17.71
+132,Christophe Eynius Tranberg,ceyniustranberg,79.8,1,3,1,low,long_tail,132,16.46
+133,Phill,phillram,39.5,1,3,0,low,long_tail,133,16.43
+134,Mohammed Malik,buildwithmalik,70.3,1,3,1,low,long_tail,134,14.9
+135,HARIHARAN ,harihran-del,64.8,1,3,0,low,long_tail,135,14.3
+136,,danazou,69.6,1,3,1,low,long_tail,136,14.2
+137,Annika 🦔,annikaschmid,64.4,1,3,0,low,long_tail,137,13.88
+138,Charles Cook,charlescook-ph,63.5,1,3,0,low,long_tail,138,12.79
+139,Luca Zani,zaniluca,69.5,1,3,1,low,long_tail,139,12.3
+140,Stephen Schmidt,Z3r0Sum,79.1,1,2,1,low,long_tail,140,11.46
+141,Ricardothe3rd,ricardothe3rd,71.7,1,2,1,low,long_tail,141,11.34
+142,Naseem Alnaji,naji247,67.6,1,2,0,low,long_tail,142,10.5
+143,Mai .,vmaineng,64.5,1,2,0,low,long_tail,143,10.33
+144,intentsolutions.io,jeremylongshore,66.1,1,2,0,low,long_tail,144,10
+145,Sean Mallia,seanpem,71.4,1,2,1,low,long_tail,145,10
+146,Mirco Boettcher,mircoboettcher,66.3,1,2,0,low,long_tail,146,9.7
+147,Kliment Minchev,kliment-slice,67.8,1,2,0,low,long_tail,147,9.5
+148,Abigail,abigailbramble,69.1,1,2,1,low,long_tail,148,9.12
+149,Coen Stevens,beatlevic,65.5,1,2,0,low,long_tail,149,9
+150,,Copilot,80.2,1,2,1,low,long_tail,150,8.4
+151,Parin Porecha,parinporecha,40.9,1,2,0,low,long_tail,151,8.1
+152,Mathuranath Metivier,matt-metivier,71.2,1,2,1,low,long_tail,152,7.9
+153,zug,zugdev,69.7,1,1,1,low,long_tail,153,6.38
+154,Tommy Gilmore,tpgilmore,74.4,1,1,0,low,long_tail,154,6.32
+155,Bill Guowei Yang,bill-ph,66.9,1,1,0,low,long_tail,155,6.32
+156,Lucky negi,igennova,70.1,1,1,1,low,long_tail,156,5.78
+157,Jaydeep pipaliya,jaydeep-pipaliya,71.9,1,1,1,low,long_tail,157,5.72
+158,eason,mango766,68.2,1,1,1,low,long_tail,158,5.7
+159,Kenji,Kenji-K,71.5,1,1,1,low,long_tail,159,5.7
+160,Cal,adityachaudhary99,67.3,1,1,0,low,long_tail,160,5.63
+161,Jakob Homan,jghoman,75.5,1,1,1,low,long_tail,161,5.55
+162,Suyadi,afsuyadi,69.2,1,1,1,low,long_tail,162,5.41
+163,aly fulton,sinthetix,68.7,1,1,1,low,long_tail,163,5.41
+164,Muskan Agarwal,Muskaan436,72.2,1,1,1,low,long_tail,164,5.38
+165,Matt Van Horn,mvanhorn,71.9,1,1,1,low,long_tail,165,5.3
+166,Alex Párraga Ferrer,a96lex,71.5,1,1,1,low,long_tail,166,5.26
+167,Basit Balogun,Basit-Balogun10,69.9,1,1,1,low,long_tail,167,5.2
+168,Eli Kinsey,smallbrownbike,37.8,1,1,0,low,long_tail,168,5.2
+169,Brandon Julio Thenaro,brandon-julio-t,70.6,1,1,1,low,long_tail,169,5.1
+170,gui martins,oddgarden6465,68.8,1,1,0,low,long_tail,170,5.1
+171,Lucas Flores,lucashflores,65.4,1,1,0,low,long_tail,171,5.1
+172,,praneya0028,71.7,1,1,1,low,long_tail,172,5.1
+173,Big John,bigjohnn1,70.3,1,1,1,low,long_tail,173,5.1
+174,Leon Daly,leonposthog,72.1,1,1,1,low,long_tail,174,4.99
+175,Patrick,ptrkstr,64.8,1,1,0,low,long_tail,175,4.9
+176,Hector Rodriguez,hector-r-759,37.8,1,1,0,low,long_tail,176,4.9
+177,Shen Li,ericls,63.7,1,1,0,low,long_tail,177,4.84
+178,Rabuma A. Bekele,rabumaabraham,40.4,1,1,0,low,long_tail,178,4.84
+179,,aaug1-unify,68,1,1,1,low,long_tail,179,4.8
+180,,camerondeleone,70.2,1,1,1,low,long_tail,180,4.8
+181,Archie Sarre Wood,archiewood,64.2,1,1,0,low,long_tail,181,4.8
+182,Mikhail Ilin,sbrin,70.9,1,1,1,low,long_tail,182,4.8
+183,Orlando Hohmeier,orlandohohmeier,43.4,1,1,0,low,long_tail,183,4.7
+184,Andrea Zanotto,sipa-echo-zaoa,38.9,1,1,0,low,long_tail,184,4.7
+185,Nakshatra Nahar,nakshatra-nahar,71.9,1,1,1,low,long_tail,185,4.59
+186,Safin Mahmud,SafinMahmud,65.8,1,1,0,low,long_tail,186,4.5
+187,Mattia Gaggi,mattiagaggi,65,1,1,0,low,long_tail,187,4.5
+188,Akash Santra,Akash504-ai,65.6,1,1,0,low,long_tail,188,4.5
+189,,shauryapednekar,67.6,1,1,0,low,long_tail,189,4.43
+190,Danny Schofield,dschofie,64.4,1,1,0,low,long_tail,190,4.4
+191,James Hawkins,jamesefhawkins,41.2,1,1,0,low,long_tail,191,4.4
+192,David,Classy-Bear,41.8,1,1,0,low,long_tail,192,4.3
+193,Alexandr Kozhevnikov,alex-kozh,41.2,1,1,0,low,long_tail,193,4.3
+194,Madelyn ,developers-universe-1,61.5,1,1,0,low,long_tail,194,4.26
+195,Caíque Porfirio,caiquejjx,68.3,1,1,0,low,long_tail,195,4.2
+196,Zach Waterfield,zlwaterfield,72.6,1,1,1,low,long_tail,196,4.2
+197,,darkLord19,42.5,1,1,0,low,long_tail,197,4.1
+198,Anthony Lio,antlio,42.4,1,1,0,low,long_tail,198,4.1
+199,Erez Rokah,erezrokah,68.1,1,1,0,low,long_tail,199,4
+200,Shao Wei,lshaowei18,71.4,1,1,1,low,long_tail,200,3.9
+201,,sayer122,41.5,1,1,0,low,long_tail,201,3.8
+202,Abheek Basu,abheek9,67,1,1,0,low,long_tail,202,3.8
+203,Will Marella,will-marella,42.4,1,1,0,low,long_tail,203,3.7
+204,Salman Chishti,salmanmkc,68.8,1,1,0,low,long_tail,204,3.6
+205,Sean Geiger,seangeiger,67.3,1,1,0,low,long_tail,205,3.5
+206,Szymon Kurek,kurekszymon,40.8,1,1,0,low,long_tail,206,3.4
+207,Igor Macedo Quintanilha,igormq,37.6,1,1,0,low,long_tail,207,3
+208,,SaraMiteva,36.7,1,1,0,low,long_tail,208,2.6
+209,Adam Kapos,Nezz,62.7,1,1,0,low,long_tail,209,2.5
+210,Jordan,JJCLane,38.2,1,1,0,low,long_tail,210,2.2

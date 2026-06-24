@@ -48,11 +48,15 @@ type ContributorQuality = {
   communication_quality_average: number;
   confidence: string;
   contributor: string;
+  coverage_tier?: string;
   executive_summary: string;
   high_confidence_impact_count: number;
+  impact_rank?: number;
   ownership_signal: number;
+  provisional_impact_total?: number;
   quality_consistency_percent: number;
   quality_score: number;
+  recent_merged_pr_count?: number;
   representative_sources: string[];
   review_interactions: ReviewInteraction[];
   review_leverage_quality: number;
@@ -228,6 +232,14 @@ function displayName(person: ContributorQuality) {
 
 function profileUrl(person: ContributorQuality) {
   return person.html_url || `https://github.com/${person.contributor}`;
+}
+
+function ContributorAvatar({ person, size = "sm" }: { person: ContributorQuality; size?: "xs" | "sm" }) {
+  if (person.avatar_url) {
+    return <img className={`contributor-avatar ${size}`} src={person.avatar_url} alt="" />;
+  }
+
+  return <span className={`contributor-avatar fallback ${size}`}>{displayName(person).slice(0, 1).toUpperCase()}</span>;
 }
 
 function RankMarker({ rank }: { rank: number }) {
@@ -551,8 +563,13 @@ function PersonRow({
     <button className="person-row" type="button" onClick={onOpen}>
       <div className="rank"><RankMarker rank={rank} /></div>
       <div className="person-main">
-        <div className="handle">{displayName(person)}</div>
-        {person.name ? <div className="subhandle">@{person.contributor}</div> : null}
+        <div className="person-name-line">
+          <ContributorAvatar person={person} />
+          <span>
+            <div className="handle">{displayName(person)}</div>
+            {person.name ? <div className="subhandle">@{person.contributor}</div> : null}
+          </span>
+        </div>
         <div className="summary">{reasonFor(person, rank)}</div>
         <div className="metrics">
           <span>{person.confidence} confidence</span>
@@ -613,8 +630,10 @@ function Sidebar({
   const [dataOpen, setDataOpen] = useState(true);
   const [contributorSheetOpen, setContributorSheetOpen] = useState(false);
   const [query, setQuery] = useState("");
+  const normalizedQuery = query.trim().toLowerCase();
   const filteredContributors = contributors.filter((person) =>
-    person.contributor.toLowerCase().includes(query.trim().toLowerCase()),
+    person.contributor.toLowerCase().includes(normalizedQuery) ||
+    (person.name?.toLowerCase().includes(normalizedQuery) ?? false),
   );
   const topFive = contributors.slice(0, 5);
   const remainingContributors = contributors.slice(5);
@@ -718,6 +737,7 @@ function Sidebar({
                   }}
                 >
                   <span>{formatRank(index + 1)}</span>
+                  <ContributorAvatar person={person} size="xs" />
                   <b>{displayName(person)}</b>
                   {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
@@ -740,6 +760,7 @@ function Sidebar({
                   }}
                 >
                   <span>{formatRank(index + 1)}</span>
+                  <ContributorAvatar person={person} size="xs" />
                   <b>{displayName(person)}</b>
                   {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
@@ -783,7 +804,7 @@ function LeaderboardHome({
             kicker: "Ranking source",
             description: "This view uses the imported contributor order as the dashboard's source of truth.",
             rows: [
-              { icon: <Trophy size={14} aria-hidden="true" />, label: "Ranking basis", value: "Final contributor quality assessment" },
+              { icon: <Trophy size={14} aria-hidden="true" />, label: "Ranking basis", value: "Imported impact rank from the contributor-level analysis" },
               { icon: <ListFilter size={14} aria-hidden="true" />, label: "Cohort", value: `${formatNumber(data.contributors.length)} ranked contributors from the exported analysis` },
               { icon: <Database size={14} aria-hidden="true" />, label: "Evidence", value: `${formatNumber(data.reviews.length)} qualitatively reviewed PRs plus ${formatNumber(data.sourceCount)} cached source records` },
             ],
@@ -807,13 +828,13 @@ function LeaderboardHome({
         <TileHeader
           color="#111111"
           title="Complete leaderboard"
-          description="All ranked contributors from the analysis export, ordered by its final quality assessment."
+          description="All ranked contributors from the analysis export, ordered by impact rank with quality signals for validation."
           tooltip={{
             kicker: "Leaderboard table",
             description: "A compact audit view of the contributor-level summary file.",
             rows: [
               { icon: <CircleUserRound size={14} aria-hidden="true" />, label: "Rows", value: "One row per ranked contributor" },
-              { icon: <Gauge size={14} aria-hidden="true" />, label: "Quality", value: "Final 0-100 contributor score" },
+              { icon: <Gauge size={14} aria-hidden="true" />, label: "Quality", value: "0-100 contributor quality score used as supporting evidence" },
               { icon: <Filter size={14} aria-hidden="true" />, label: "Open", value: "Jumps to the contributor profile with deeper evidence" },
             ],
           }}
@@ -886,11 +907,11 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           </div>
           <div className="selected-profile-main">
             <a className="selected-handle" href={profileUrl(person)} target="_blank" rel="noreferrer">
+              {person.avatar_url ? <img src={person.avatar_url} alt="" /> : null}
               <span>
                 <b>{displayName(person)}</b>
                 {person.name ? <small>@{person.contributor}</small> : null}
               </span>
-              <ExternalLink size={14} aria-hidden="true" />
             </a>
             <div className="selected-facts">
               <div><b>{formatNumber(person.reviewed_pr_count)}</b><span>Reviewed PRs</span></div>

@@ -1,52 +1,54 @@
 # PostHog Engineering Impact Dashboard
 
-Dashboard for the Weave take-home assignment.
+Single-page dashboard for the PostHog engineering impact take-home.
 
 ## Impact Definition
 
-Impact is reviewed work that changed product or customer outcomes, improved reliability or speed, reduced operational risk, or amplified other engineers through substantive review.
+Impact is reviewed engineering work that changed product or customer outcomes, improved reliability or speed, reduced operational risk, or amplified other engineers through review and ownership.
 
-The score intentionally avoids raw line-count or commit-count ranking. It combines:
+The dashboard uses the imported qualitative/programmatic analysis export as its source of truth. The ranking is not based on raw commits, lines of code, file count, or raw PR count. It combines:
 
-- Shipped outcome: merged PRs weighted by product, bug/regression, performance, security, migration, test, documentation, and cross-area signals.
-- Review leverage: review participation on other engineers' PRs.
-- Ownership breadth: meaningful activity across product/system areas.
-- Quality/risk mix: bug, regression, performance, security, and test-heavy work.
-- Consistency: active weeks in the 90-day window.
-
-Shipped work and review leverage use diminishing returns so very high PR volume does not automatically dominate.
+- Impact rank from the contributor-level analysis.
+- PR quality score across reviewed evidence.
+- Problem importance, technical soundness, risk handling, review collaboration, validation, area leverage, and communication rubric scores.
+- Strengths and caveats from the qualitative assessment.
+- Representative PR and review evidence linked back to GitHub.
+- Public GitHub profile names and avatars, with handle fallback where unavailable.
 
 ## Data
 
-- Repository: `PostHog/posthog`
-- Window: `2026-03-25` through `2026-06-23`
-- Merged PRs found: `9,279`
-- Contributors scored: `211`
+- Repository analyzed: `PostHog/posthog`
+- Analysis window: `2026-05-24` through `2026-06-23`
+- Contributors ranked: `210`
+- PRs qualitatively reviewed: `385`
+- Cached source records: `6,656`
 
-GitHub GraphQL supplied rich PR metadata, labels, files, and reviews where available. During secondary GitHub throttling, a subset of days fell back to GitHub REST search; those PRs still include title, body, author, labels, comments, and merge date, but have lighter file/review detail.
+Runtime dashboard data is cached in `site/public/data/analysis/` so the page loads without GitHub API calls.
 
 ## Dashboard
 
-Public URL: https://site-b8ww3m7wq-andrewhuhhs-projects.vercel.app
-
-The current UI is styled after PostHog's product dashboard layout: resizable left app navigation, a scrollable inner content card inside a dashboard shell, sticky action/filter header, Lucide iconography, Inter body/control typography, Matter heading typography, bordered insight tiles, hover/focus info popovers for tile metadata, and a measured masonry tile grid that packs variable-height cards without fixed grid gaps.
-
-Timer: 33 minutes 3 seconds, from 2026-06-23 15:41:55 to 16:14:58 America/Vancouver.
+The UI is styled after PostHog's product dashboard layout: resizable left navigation on desktop, mobile sheet navigation, scrollable inner content card, sticky header controls, Lucide iconography, Inter body/control typography, Matter heading typography, bordered insight tiles, edge-aware info popovers, and card action menus.
 
 ## Reproduce
 
 ```powershell
-python fetch_analyze.py
-Copy-Item -Force data\analysis.json site\public\data\analysis.json
 cd site
 npm install
 npm run build
 ```
 
-## Top 5
+To refresh the dashboard cache from the analysis export, copy:
 
-1. Gilbert09
-2. pauldambra
-3. rnegron
-4. webjunkie
-5. sampennington
+```powershell
+Copy-Item -Force ..\..\workweave-posthog-assessment\data\contributor_quality_scores.json public\data\analysis\contributor_quality_scores.json
+Copy-Item -Force ..\..\workweave-posthog-assessment\data\qualitative_pr_reviews.json public\data\analysis\qualitative_pr_reviews.json
+Copy-Item -Force ..\..\workweave-posthog-assessment\data\quality_assessment_sources.json public\data\analysis\quality_assessment_sources.json
+```
+
+## Current Top 5
+
+1. Tom Owers (`@Gilbert09`)
+2. Paul D'Ambra (`@pauldambra`)
+3. Andrew Maguire (`@andrewm4894`)
+4. Sam Pennington (`@sampennington`)
+5. Julian Bez (`@webjunkie`)
