@@ -138,6 +138,6 @@ Additional data refresh/enrichment work used local Node/PowerShell scripts and G
 
 ## Final Result
 
-- Public dashboard URL from the initial Vercel deployment: `https://site-b8ww3m7wq-andrewhuhhs-projects.vercel.app`
+- Public dashboard URL: `https://posthog-impact-dashboard-seven.vercel.app`
 - Source repository: `https://github.com/andrewhuhh/posthog-impact-dashboard`
 - Latest pushed commit: `ac5f7c1 Polish dashboard interactions and data views`

@@ -2,6 +2,8 @@
 
 Single-page dashboard for the PostHog engineering impact take-home.
 
+Public dashboard URL: https://posthog-impact-dashboard-seven.vercel.app
+
 ## Impact Definition
 
 Impact is reviewed engineering work that changed product or customer outcomes, improved reliability or speed, reduced operational risk, or amplified other engineers through review and ownership.
