@@ -112,7 +112,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Tom Owers",
     "avatar_url": "https://avatars.githubusercontent.com/u/1459269?v=4",
-    "html_url": "https://github.com/Gilbert09"
+    "html_url": "https://github.com/Gilbert09",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.88,
@@ -232,7 +234,9 @@
     "weighted_pr_quality_average": 77.2,
     "name": "Paul D'Ambra",
     "avatar_url": "https://avatars.githubusercontent.com/u/984817?v=4",
-    "html_url": "https://github.com/pauldambra"
+    "html_url": "https://github.com/pauldambra",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -347,7 +351,9 @@
     "weighted_pr_quality_average": 83.6,
     "name": "Andrew Maguire",
     "avatar_url": "https://avatars.githubusercontent.com/u/2178292?v=4",
-    "html_url": "https://github.com/andrewm4894"
+    "html_url": "https://github.com/andrewm4894",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -453,7 +459,9 @@
     "weighted_pr_quality_average": 82,
     "name": "Sam Pennington",
     "avatar_url": "https://avatars.githubusercontent.com/u/56024559?v=4",
-    "html_url": "https://github.com/sampennington"
+    "html_url": "https://github.com/sampennington",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.94,
@@ -559,7 +567,9 @@
     "weighted_pr_quality_average": 84.6,
     "name": "Julian Bez",
     "avatar_url": "https://avatars.githubusercontent.com/u/59713?v=4",
-    "html_url": "https://github.com/webjunkie"
+    "html_url": "https://github.com/webjunkie",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -671,7 +681,9 @@
     "weighted_pr_quality_average": 76.4,
     "name": "Georgiy Tarasov",
     "avatar_url": "https://avatars.githubusercontent.com/u/13541795?v=4",
-    "html_url": "https://github.com/skoob13"
+    "html_url": "https://github.com/skoob13",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -726,7 +738,9 @@
     "weighted_pr_quality_average": 78.7,
     "name": "Jon McCallum",
     "avatar_url": "https://avatars.githubusercontent.com/u/66999846?v=4",
-    "html_url": "https://github.com/jonmcwest"
+    "html_url": "https://github.com/jonmcwest",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -806,7 +820,9 @@
     "weighted_pr_quality_average": 77.8,
     "name": "Raúl Negrón-Otero",
     "avatar_url": "https://avatars.githubusercontent.com/u/4153103?v=4",
-    "html_url": "https://github.com/rnegron"
+    "html_url": "https://github.com/rnegron",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -918,7 +934,9 @@
     "weighted_pr_quality_average": 84.9,
     "name": "Robbie",
     "avatar_url": "https://avatars.githubusercontent.com/u/2056078?v=4",
-    "html_url": "https://github.com/robbie-c"
+    "html_url": "https://github.com/robbie-c",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1035,7 +1053,9 @@
     "weighted_pr_quality_average": 76.3,
     "name": "Rafael Audibert",
     "avatar_url": "https://avatars.githubusercontent.com/u/32079912?v=4",
-    "html_url": "https://github.com/rafaeelaudibert"
+    "html_url": "https://github.com/rafaeelaudibert",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1140,7 +1160,9 @@
     "weighted_pr_quality_average": 77.7,
     "name": "Jovan Sakovic",
     "avatar_url": "https://avatars.githubusercontent.com/u/49978945?v=4",
-    "html_url": "https://github.com/sakce"
+    "html_url": "https://github.com/sakce",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.12,
@@ -1265,7 +1287,9 @@
     "weighted_pr_quality_average": 84.3,
     "name": "Phil Haack",
     "avatar_url": "https://avatars.githubusercontent.com/u/19977?v=4",
-    "html_url": "https://github.com/haacked"
+    "html_url": "https://github.com/haacked",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1381,7 +1405,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "Matt Pua",
     "avatar_url": "https://avatars.githubusercontent.com/u/3376526?v=4",
-    "html_url": "https://github.com/MattPua"
+    "html_url": "https://github.com/MattPua",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.12,
@@ -1490,7 +1516,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "Thomas Obermüller",
     "avatar_url": "https://avatars.githubusercontent.com/u/1851359?v=4",
-    "html_url": "https://github.com/thmsobrmlr"
+    "html_url": "https://github.com/thmsobrmlr",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1594,7 +1622,9 @@
     "weighted_pr_quality_average": 82.2,
     "name": "Lucas Ricoy",
     "avatar_url": "https://avatars.githubusercontent.com/u/2034367?v=4",
-    "html_url": "https://github.com/lricoy"
+    "html_url": "https://github.com/lricoy",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -1678,7 +1708,9 @@
     "weighted_pr_quality_average": 88,
     "name": "Matt Brooker",
     "avatar_url": "https://avatars.githubusercontent.com/u/9833550?v=4",
-    "html_url": "https://github.com/MattBro"
+    "html_url": "https://github.com/MattBro",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.12,
@@ -1720,7 +1752,9 @@
     "weighted_pr_quality_average": 83.6,
     "name": "Alex V",
     "avatar_url": "https://avatars.githubusercontent.com/u/13624984?v=4",
-    "html_url": "https://github.com/veryayskiy"
+    "html_url": "https://github.com/veryayskiy",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1835,7 +1869,9 @@
     "weighted_pr_quality_average": 82.6,
     "name": "Tue Haulund",
     "avatar_url": "https://avatars.githubusercontent.com/u/2675352?v=4",
-    "html_url": "https://github.com/TueHaulund"
+    "html_url": "https://github.com/TueHaulund",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -1908,7 +1944,9 @@
     "weighted_pr_quality_average": 81.8,
     "name": "Eli Reisman",
     "avatar_url": "https://avatars.githubusercontent.com/u/197809444?v=4",
-    "html_url": "https://github.com/eli-r-ph"
+    "html_url": "https://github.com/eli-r-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2013,7 +2051,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "Adam Leith",
     "avatar_url": "https://avatars.githubusercontent.com/u/814190?v=4",
-    "html_url": "https://github.com/adamleithp"
+    "html_url": "https://github.com/adamleithp",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.12,
@@ -2131,7 +2171,9 @@
     "weighted_pr_quality_average": 85.3,
     "name": "Dylan Martin",
     "avatar_url": "https://avatars.githubusercontent.com/u/4853149?v=4",
-    "html_url": "https://github.com/dmarticus"
+    "html_url": "https://github.com/dmarticus",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.38,
@@ -2225,7 +2267,9 @@
     "weighted_pr_quality_average": 79.7,
     "name": "Arthur Moreira de Deus",
     "avatar_url": "https://avatars.githubusercontent.com/u/54866778?v=4",
-    "html_url": "https://github.com/arthurdedeus"
+    "html_url": "https://github.com/arthurdedeus",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.12,
@@ -2323,7 +2367,9 @@
     "weighted_pr_quality_average": 83.8,
     "name": "Vasco de Krijger",
     "avatar_url": "https://avatars.githubusercontent.com/u/66254686?v=4",
-    "html_url": "https://github.com/vdekrijger"
+    "html_url": "https://github.com/vdekrijger",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2380,7 +2426,9 @@
     "weighted_pr_quality_average": 80.6,
     "name": "Juraj Majerik",
     "avatar_url": "https://avatars.githubusercontent.com/u/22996112?v=4",
-    "html_url": "https://github.com/jurajmajerik"
+    "html_url": "https://github.com/jurajmajerik",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2488,7 +2536,9 @@
     "weighted_pr_quality_average": 80.3,
     "name": "Joshua Snyder",
     "avatar_url": "https://avatars.githubusercontent.com/u/7135900?v=4",
-    "html_url": "https://github.com/joshsny"
+    "html_url": "https://github.com/joshsny",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -2527,7 +2577,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Jordan Mryyan",
     "avatar_url": "https://avatars.githubusercontent.com/u/245956587?v=4",
-    "html_url": "https://github.com/jordanm-posthog"
+    "html_url": "https://github.com/jordanm-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2617,7 +2669,9 @@
     "weighted_pr_quality_average": 86.8,
     "name": "Yasen",
     "avatar_url": "https://avatars.githubusercontent.com/u/213223200?v=4",
-    "html_url": "https://github.com/yasen-posthog"
+    "html_url": "https://github.com/yasen-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2731,7 +2785,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "José Sequeira",
     "avatar_url": "https://avatars.githubusercontent.com/u/117165826?v=4",
-    "html_url": "https://github.com/jose-sequeira"
+    "html_url": "https://github.com/jose-sequeira",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -2784,7 +2840,9 @@
     "weighted_pr_quality_average": 82.7,
     "name": "Reece Jones",
     "avatar_url": "https://avatars.githubusercontent.com/u/21371637?v=4",
-    "html_url": "https://github.com/ReeceJones"
+    "html_url": "https://github.com/ReeceJones",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2874,7 +2932,9 @@
     "weighted_pr_quality_average": 81.2,
     "name": "Anders",
     "avatar_url": "https://avatars.githubusercontent.com/u/754494?v=4",
-    "html_url": "https://github.com/andehen"
+    "html_url": "https://github.com/andehen",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -2958,7 +3018,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Daniel RC",
     "avatar_url": "https://avatars.githubusercontent.com/u/13837907?v=4",
-    "html_url": "https://github.com/danielcarletti"
+    "html_url": "https://github.com/danielcarletti",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3039,7 +3101,9 @@
     "weighted_pr_quality_average": 78.2,
     "name": "Fernando Gomes",
     "avatar_url": "https://avatars.githubusercontent.com/u/28491014?v=4",
-    "html_url": "https://github.com/fercgomes"
+    "html_url": "https://github.com/fercgomes",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3146,7 +3210,9 @@
     "weighted_pr_quality_average": 83.2,
     "name": "Tom Piccirello",
     "avatar_url": "https://avatars.githubusercontent.com/u/8296030?v=4",
-    "html_url": "https://github.com/Piccirello"
+    "html_url": "https://github.com/Piccirello",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3185,7 +3251,9 @@
     "weighted_pr_quality_average": 85,
     "name": "Vojta Bartoš",
     "avatar_url": "https://avatars.githubusercontent.com/u/1526646?v=4",
-    "html_url": "https://github.com/VojtechBartos"
+    "html_url": "https://github.com/VojtechBartos",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3279,7 +3347,9 @@
     "weighted_pr_quality_average": 78,
     "name": "Nick Best",
     "avatar_url": "https://avatars.githubusercontent.com/u/206742387?v=4",
-    "html_url": "https://github.com/nickbest-ph"
+    "html_url": "https://github.com/nickbest-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3378,7 +3448,9 @@
     "weighted_pr_quality_average": 84.5,
     "name": "Gustavo H. Strassburger",
     "avatar_url": "https://avatars.githubusercontent.com/u/9598562?v=4",
-    "html_url": "https://github.com/gustavohstrassburger"
+    "html_url": "https://github.com/gustavohstrassburger",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3487,7 +3559,9 @@
     "weighted_pr_quality_average": 77.8,
     "name": "Michael Matloka",
     "avatar_url": "https://avatars.githubusercontent.com/u/4550621?v=4",
-    "html_url": "https://github.com/Twixes"
+    "html_url": "https://github.com/Twixes",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3553,7 +3627,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Kim Svatos Dugan",
     "avatar_url": "https://avatars.githubusercontent.com/u/147102038?v=4",
-    "html_url": "https://github.com/ksvat"
+    "html_url": "https://github.com/ksvat",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3621,7 +3697,9 @@
     "weighted_pr_quality_average": 79.2,
     "name": "Marcel Poelker",
     "avatar_url": "https://avatars.githubusercontent.com/u/252936290?v=4",
-    "html_url": "https://github.com/mp-hog"
+    "html_url": "https://github.com/mp-hog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.75,
@@ -3674,7 +3752,9 @@
     "weighted_pr_quality_average": 87.8,
     "name": "Aleksander Błaszkiewicz",
     "avatar_url": "https://avatars.githubusercontent.com/u/54682207?v=4",
-    "html_url": "https://github.com/ablaszkiewicz"
+    "html_url": "https://github.com/ablaszkiewicz",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3713,7 +3793,9 @@
     "weighted_pr_quality_average": 77.8,
     "name": "Adam Bowker",
     "avatar_url": "https://avatars.githubusercontent.com/u/23323033?v=4",
-    "html_url": "https://github.com/adboio"
+    "html_url": "https://github.com/adboio",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3819,7 +3901,9 @@
     "weighted_pr_quality_average": 81.2,
     "name": "Alessandro Pogliaghi",
     "avatar_url": "https://avatars.githubusercontent.com/u/2117114?v=4",
-    "html_url": "https://github.com/tatoalo"
+    "html_url": "https://github.com/tatoalo",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3872,7 +3956,9 @@
     "weighted_pr_quality_average": 78,
     "name": "Rodrigo Iloro",
     "avatar_url": "https://avatars.githubusercontent.com/u/233601?v=4",
-    "html_url": "https://github.com/rodrigoi"
+    "html_url": "https://github.com/rodrigoi",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -3953,7 +4039,9 @@
     "weighted_pr_quality_average": 82.3,
     "name": "Georgis Andonis",
     "avatar_url": "https://avatars.githubusercontent.com/u/6430745?v=4",
-    "html_url": "https://github.com/gesh"
+    "html_url": "https://github.com/gesh",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4057,7 +4145,9 @@
     "weighted_pr_quality_average": 82,
     "name": "Hugues Pouillot",
     "avatar_url": "https://avatars.githubusercontent.com/u/3455883?v=4",
-    "html_url": "https://github.com/hpouillot"
+    "html_url": "https://github.com/hpouillot",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4136,7 +4226,9 @@
     "weighted_pr_quality_average": 87.2,
     "name": "Marcus Hof",
     "avatar_url": "https://avatars.githubusercontent.com/u/13001502?v=4",
-    "html_url": "https://github.com/MarconLP"
+    "html_url": "https://github.com/MarconLP",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4229,7 +4321,9 @@
     "weighted_pr_quality_average": 81.8,
     "name": "Richard Solomou",
     "avatar_url": "https://avatars.githubusercontent.com/u/2622273?v=4",
-    "html_url": "https://github.com/richardsolomou"
+    "html_url": "https://github.com/richardsolomou",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4341,7 +4435,9 @@
     "weighted_pr_quality_average": 83.8,
     "name": "Marius Andra",
     "avatar_url": "https://avatars.githubusercontent.com/u/53387?v=4",
-    "html_url": "https://github.com/mariusandra"
+    "html_url": "https://github.com/mariusandra",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4431,7 +4527,9 @@
     "weighted_pr_quality_average": 80.7,
     "name": "Frank Hamand",
     "avatar_url": "https://avatars.githubusercontent.com/u/2088870?v=4",
-    "html_url": "https://github.com/frankh"
+    "html_url": "https://github.com/frankh",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -4532,7 +4630,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Alex Lider",
     "avatar_url": "https://avatars.githubusercontent.com/u/221966567?v=4",
-    "html_url": "https://github.com/a-lider"
+    "html_url": "https://github.com/a-lider",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4650,7 +4750,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Carlos Marchal",
     "avatar_url": "https://avatars.githubusercontent.com/u/228468567?v=4",
-    "html_url": "https://github.com/carlos-marchal-ph"
+    "html_url": "https://github.com/carlos-marchal-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4720,7 +4822,9 @@
     "weighted_pr_quality_average": 82,
     "name": "Catalin Irimie",
     "avatar_url": "https://avatars.githubusercontent.com/u/268578347?v=4",
-    "html_url": "https://github.com/cat-ph"
+    "html_url": "https://github.com/cat-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4810,7 +4914,9 @@
     "weighted_pr_quality_average": 79.7,
     "name": "Meikel Ratz",
     "avatar_url": "https://avatars.githubusercontent.com/u/8418536?v=4",
-    "html_url": "https://github.com/meikelmosby"
+    "html_url": "https://github.com/meikelmosby",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4863,7 +4969,9 @@
     "weighted_pr_quality_average": 85.2,
     "name": "Ben White",
     "avatar_url": "https://avatars.githubusercontent.com/u/2536520?v=4",
-    "html_url": "https://github.com/benjackwhite"
+    "html_url": "https://github.com/benjackwhite",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -4959,7 +5067,9 @@
     "weighted_pr_quality_average": 74.8,
     "name": "Tomás Farías Santana",
     "avatar_url": "https://avatars.githubusercontent.com/u/18740659?v=4",
-    "html_url": "https://github.com/tomasfarias"
+    "html_url": "https://github.com/tomasfarias",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -5068,7 +5178,9 @@
     "weighted_pr_quality_average": 79,
     "name": "Daniel Marchuk",
     "avatar_url": "https://avatars.githubusercontent.com/u/8395106?v=4",
-    "html_url": "https://github.com/dmarchuk"
+    "html_url": "https://github.com/dmarchuk",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -5147,7 +5259,9 @@
     "weighted_pr_quality_average": 80,
     "name": "Andy Zhao",
     "avatar_url": "https://avatars.githubusercontent.com/u/34008309?v=4",
-    "html_url": "https://github.com/andyzzhao"
+    "html_url": "https://github.com/andyzzhao",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5213,7 +5327,9 @@
     "weighted_pr_quality_average": 78,
     "name": "andrew j. mcgehee",
     "avatar_url": "https://avatars.githubusercontent.com/u/23667085?v=4",
-    "html_url": "https://github.com/andrewjmcgehee"
+    "html_url": "https://github.com/andrewjmcgehee",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5266,7 +5382,9 @@
     "weighted_pr_quality_average": 84.5,
     "name": "Javier Bahamondes",
     "avatar_url": "https://avatars.githubusercontent.com/u/205275836?v=4",
-    "html_url": "https://github.com/jabahamondes"
+    "html_url": "https://github.com/jabahamondes",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5344,7 +5462,9 @@
     "weighted_pr_quality_average": 84.8,
     "name": "Hayne Ryu",
     "avatar_url": "https://avatars.githubusercontent.com/u/19719193?v=4",
-    "html_url": "https://github.com/fasyy612"
+    "html_url": "https://github.com/fasyy612",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5425,7 +5545,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "Lucas Faria",
     "avatar_url": "https://avatars.githubusercontent.com/u/12522524?v=4",
-    "html_url": "https://github.com/lucasheriques"
+    "html_url": "https://github.com/lucasheriques",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5463,7 +5585,9 @@
     "weighted_pr_quality_average": 75.2,
     "name": "Daniel Visca",
     "avatar_url": "https://avatars.githubusercontent.com/u/16750763?v=4",
-    "html_url": "https://github.com/DanielVisca"
+    "html_url": "https://github.com/DanielVisca",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.75,
@@ -5569,7 +5693,9 @@
     "weighted_pr_quality_average": 82.8,
     "name": "Georges-Antoine Assi",
     "avatar_url": "https://avatars.githubusercontent.com/u/3247106?v=4",
-    "html_url": "https://github.com/gantoine"
+    "html_url": "https://github.com/gantoine",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5623,7 +5749,9 @@
     "weighted_pr_quality_average": 79.8,
     "name": "Ross",
     "avatar_url": "https://avatars.githubusercontent.com/u/5103732?v=4",
-    "html_url": "https://github.com/rossgray"
+    "html_url": "https://github.com/rossgray",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5676,7 +5804,9 @@
     "weighted_pr_quality_average": 84.8,
     "name": "Paweł Ledwoń",
     "avatar_url": "https://avatars.githubusercontent.com/u/69904?v=4",
-    "html_url": "https://github.com/pl"
+    "html_url": "https://github.com/pl",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5742,7 +5872,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "George Munyoro",
     "avatar_url": "https://avatars.githubusercontent.com/u/32019551?v=4",
-    "html_url": "https://github.com/georgemunyoro"
+    "html_url": "https://github.com/georgemunyoro",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5800,7 +5932,9 @@
     "weighted_pr_quality_average": 88.5,
     "name": "estefania",
     "avatar_url": "https://avatars.githubusercontent.com/u/10627591?v=4",
-    "html_url": "https://github.com/estefaniarabadan"
+    "html_url": "https://github.com/estefaniarabadan",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5866,7 +6000,9 @@
     "weighted_pr_quality_average": 79,
     "name": "James Greenhill",
     "avatar_url": "https://avatars.githubusercontent.com/u/391319?v=4",
-    "html_url": "https://github.com/fuziontech"
+    "html_url": "https://github.com/fuziontech",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -5960,7 +6096,9 @@
     "weighted_pr_quality_average": 82.8,
     "name": "Radu Raicea",
     "avatar_url": "https://avatars.githubusercontent.com/u/15457029?v=4",
-    "html_url": "https://github.com/Radu-Raicea"
+    "html_url": "https://github.com/Radu-Raicea",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6066,7 +6204,9 @@
     "weighted_pr_quality_average": 79,
     "name": "Paweł Szczur",
     "avatar_url": "https://avatars.githubusercontent.com/u/144554?v=4",
-    "html_url": "https://github.com/orian"
+    "html_url": "https://github.com/orian",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6106,7 +6246,9 @@
     "weighted_pr_quality_average": 82.2,
     "name": "Chris Volzer",
     "avatar_url": "https://avatars.githubusercontent.com/u/15130376?v=4",
-    "html_url": "https://github.com/cvolzer3"
+    "html_url": "https://github.com/cvolzer3",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6144,7 +6286,9 @@
     "weighted_pr_quality_average": 78.2,
     "name": "Luke Belton",
     "avatar_url": "https://avatars.githubusercontent.com/u/58511679?v=4",
-    "html_url": "https://github.com/luke-belton"
+    "html_url": "https://github.com/luke-belton",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6184,7 +6328,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Christiaan Hendriksen",
     "avatar_url": "https://avatars.githubusercontent.com/u/252863363?v=4",
-    "html_url": "https://github.com/christiaan-ph"
+    "html_url": "https://github.com/christiaan-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -6283,7 +6429,9 @@
     "weighted_pr_quality_average": 78.2,
     "name": "Zach Brown",
     "avatar_url": "https://avatars.githubusercontent.com/u/5431182?v=4",
-    "html_url": "https://github.com/z0br0wn"
+    "html_url": "https://github.com/z0br0wn",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6336,7 +6484,9 @@
     "weighted_pr_quality_average": 81.8,
     "name": "Oliver Browne",
     "avatar_url": "https://avatars.githubusercontent.com/u/8105072?v=4",
-    "html_url": "https://github.com/oliverb123"
+    "html_url": "https://github.com/oliverb123",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -6430,7 +6580,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Haven",
     "avatar_url": "https://avatars.githubusercontent.com/u/12489563?v=4",
-    "html_url": "https://github.com/havenbarnes"
+    "html_url": "https://github.com/havenbarnes",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6540,7 +6692,9 @@
     "weighted_pr_quality_average": 84.2,
     "name": "Alex Lebedev",
     "avatar_url": "https://avatars.githubusercontent.com/u/354488?v=4",
-    "html_url": "https://github.com/sortafreel"
+    "html_url": "https://github.com/sortafreel",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6594,7 +6748,9 @@
     "weighted_pr_quality_average": 87.2,
     "name": "Emanuele Capparelli",
     "avatar_url": "https://avatars.githubusercontent.com/u/7335343?v=4",
-    "html_url": "https://github.com/kappa90"
+    "html_url": "https://github.com/kappa90",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -6678,7 +6834,9 @@
     "weighted_pr_quality_average": 87.5,
     "name": "Matheus Batista",
     "avatar_url": "https://avatars.githubusercontent.com/u/88170905?v=4",
-    "html_url": "https://github.com/matheus-vb"
+    "html_url": "https://github.com/matheus-vb",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6756,7 +6914,9 @@
     "weighted_pr_quality_average": 86,
     "name": "Sandy Spicer",
     "avatar_url": "https://avatars.githubusercontent.com/u/1855120?v=4",
-    "html_url": "https://github.com/aspicer"
+    "html_url": "https://github.com/aspicer",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6796,7 +6956,9 @@
     "weighted_pr_quality_average": 84.8,
     "name": "Patricio",
     "avatar_url": "https://avatars.githubusercontent.com/u/181578370?v=4",
-    "html_url": "https://github.com/patricio-posthog"
+    "html_url": "https://github.com/patricio-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6849,7 +7011,9 @@
     "weighted_pr_quality_average": 86,
     "name": "Eric Duong",
     "avatar_url": "https://avatars.githubusercontent.com/u/13127476?v=4",
-    "html_url": "https://github.com/EDsCODE"
+    "html_url": "https://github.com/EDsCODE",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6888,7 +7052,9 @@
     "weighted_pr_quality_average": 73.2,
     "name": "Ben Lea",
     "avatar_url": "https://avatars.githubusercontent.com/u/80100530?v=4",
-    "html_url": "https://github.com/darkopia"
+    "html_url": "https://github.com/darkopia",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -6959,7 +7125,9 @@
     "weighted_pr_quality_average": 80.8,
     "name": "Abhischek",
     "avatar_url": "https://avatars.githubusercontent.com/u/1593790?v=4",
-    "html_url": "https://github.com/abhischekt"
+    "html_url": "https://github.com/abhischekt",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.25,
@@ -6999,7 +7167,9 @@
     "weighted_pr_quality_average": 77.3,
     "name": "Anirudh Pillai",
     "avatar_url": "https://avatars.githubusercontent.com/u/15368923?v=4",
-    "html_url": "https://github.com/anirudhpillai"
+    "html_url": "https://github.com/anirudhpillai",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7039,7 +7209,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Xander",
     "avatar_url": "https://avatars.githubusercontent.com/u/9535852?v=4",
-    "html_url": "https://github.com/xljones"
+    "html_url": "https://github.com/xljones",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7078,7 +7250,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Arno Hillen",
     "avatar_url": "https://avatars.githubusercontent.com/u/33028961?v=4",
-    "html_url": "https://github.com/arnohillen"
+    "html_url": "https://github.com/arnohillen",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7117,7 +7291,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "Christian Rafferty",
     "avatar_url": "https://avatars.githubusercontent.com/u/38156512?v=4",
-    "html_url": "https://github.com/clr182"
+    "html_url": "https://github.com/clr182",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7155,7 +7331,9 @@
     "weighted_pr_quality_average": 75.8,
     "name": "Joshua Ordehi",
     "avatar_url": "https://avatars.githubusercontent.com/u/45109738?v=4",
-    "html_url": "https://github.com/ordehi"
+    "html_url": "https://github.com/ordehi",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -7194,7 +7372,9 @@
     "weighted_pr_quality_average": 84.2,
     "name": "Leonardo Menezes",
     "avatar_url": "https://avatars.githubusercontent.com/u/750074?v=4",
-    "html_url": "https://github.com/lmenezes"
+    "html_url": "https://github.com/lmenezes",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7298,7 +7478,9 @@
     "weighted_pr_quality_average": 76.5,
     "name": "Brandon",
     "avatar_url": "https://avatars.githubusercontent.com/u/33383521?v=4",
-    "html_url": "https://github.com/brandonleung"
+    "html_url": "https://github.com/brandonleung",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7356,7 +7538,9 @@
     "weighted_pr_quality_average": 76,
     "name": "Felipe Rosa de Almeida",
     "avatar_url": "https://avatars.githubusercontent.com/u/9535653?v=4",
-    "html_url": "https://github.com/feliperalmeida"
+    "html_url": "https://github.com/feliperalmeida",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7427,7 +7611,9 @@
     "weighted_pr_quality_average": 81,
     "name": "Pawel Cebula",
     "avatar_url": "https://avatars.githubusercontent.com/u/28671716?v=4",
-    "html_url": "https://github.com/pawel-cebula"
+    "html_url": "https://github.com/pawel-cebula",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7480,7 +7666,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "Peter Kirkham",
     "avatar_url": "https://avatars.githubusercontent.com/u/4571455?v=4",
-    "html_url": "https://github.com/k11kirky"
+    "html_url": "https://github.com/k11kirky",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7519,7 +7707,9 @@
     "weighted_pr_quality_average": 84.8,
     "name": "Bryan Ciaraldi",
     "avatar_url": "https://avatars.githubusercontent.com/u/7735914?v=4",
-    "html_url": "https://github.com/bciaraldi"
+    "html_url": "https://github.com/bciaraldi",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7558,7 +7748,9 @@
     "weighted_pr_quality_average": 84.5,
     "name": "Raquel Smith",
     "avatar_url": "https://avatars.githubusercontent.com/u/18598166?v=4",
-    "html_url": "https://github.com/raquelmsmith"
+    "html_url": "https://github.com/raquelmsmith",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7597,7 +7789,9 @@
     "weighted_pr_quality_average": 84.8,
     "name": "Steven Shults",
     "avatar_url": "https://avatars.githubusercontent.com/u/227448?v=4",
-    "html_url": "https://github.com/slshults"
+    "html_url": "https://github.com/slshults",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7676,7 +7870,9 @@
     "weighted_pr_quality_average": 83.5,
     "name": "Harley Alexander",
     "avatar_url": "https://avatars.githubusercontent.com/u/43975092?v=4",
-    "html_url": "https://github.com/mayteio"
+    "html_url": "https://github.com/mayteio",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7762,7 +7958,9 @@
     "weighted_pr_quality_average": 78.2,
     "name": "Manoel Aranda Neto",
     "avatar_url": "https://avatars.githubusercontent.com/u/5731772?v=4",
-    "html_url": "https://github.com/marandaneto"
+    "html_url": "https://github.com/marandaneto",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.75,
@@ -7801,7 +7999,9 @@
     "weighted_pr_quality_average": 85.8,
     "name": "Nicholas Waltz",
     "avatar_url": "https://avatars.githubusercontent.com/u/10517931?v=4",
-    "html_url": "https://github.com/nicowaltz"
+    "html_url": "https://github.com/nicowaltz",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -7866,7 +8066,9 @@
     "weighted_pr_quality_average": 91.5,
     "name": "Dustin Byrne",
     "avatar_url": "https://avatars.githubusercontent.com/u/8737782?v=4",
-    "html_url": "https://github.com/dustinbyrne"
+    "html_url": "https://github.com/dustinbyrne",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7929,7 +8131,9 @@
     "weighted_pr_quality_average": 74,
     "name": "Daniel Escribano",
     "avatar_url": "https://avatars.githubusercontent.com/u/7421248?v=4",
-    "html_url": "https://github.com/Daesgar"
+    "html_url": "https://github.com/Daesgar",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -7967,7 +8171,9 @@
     "weighted_pr_quality_average": 87,
     "name": "Charles Vien",
     "avatar_url": "https://avatars.githubusercontent.com/u/5378415?v=4",
-    "html_url": "https://github.com/charlesvien"
+    "html_url": "https://github.com/charlesvien",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8005,7 +8211,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "timgl",
     "avatar_url": "https://avatars.githubusercontent.com/u/1727427?v=4",
-    "html_url": "https://github.com/timgl"
+    "html_url": "https://github.com/timgl",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8044,7 +8252,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "Sarah Sanders",
     "avatar_url": "https://avatars.githubusercontent.com/u/88458517?v=4",
-    "html_url": "https://github.com/sarahxsanders"
+    "html_url": "https://github.com/sarahxsanders",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8149,7 +8359,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Rory Shanks",
     "avatar_url": "https://avatars.githubusercontent.com/u/6383578?v=4",
-    "html_url": "https://github.com/rorylshanks"
+    "html_url": "https://github.com/rorylshanks",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -8188,7 +8400,9 @@
     "weighted_pr_quality_average": 80,
     "name": "Anna Garcia",
     "avatar_url": "https://avatars.githubusercontent.com/u/11654201?v=4",
-    "html_url": "https://github.com/turnipdabeets"
+    "html_url": "https://github.com/turnipdabeets",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -8238,7 +8452,9 @@
     "weighted_pr_quality_average": 75,
     "name": "Jonathan Mieloo",
     "avatar_url": "https://avatars.githubusercontent.com/u/32547391?v=4",
-    "html_url": "https://github.com/jonathanlab"
+    "html_url": "https://github.com/jonathanlab",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8304,7 +8520,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "Ioannis J",
     "avatar_url": "https://avatars.githubusercontent.com/u/183369585?v=4",
-    "html_url": "https://github.com/ioannisj"
+    "html_url": "https://github.com/ioannisj",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8342,7 +8560,9 @@
     "weighted_pr_quality_average": 83.5,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/270336981?v=4",
-    "html_url": "https://github.com/ryans-posthog"
+    "html_url": "https://github.com/ryans-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8394,7 +8614,9 @@
     "weighted_pr_quality_average": 87,
     "name": "Daniel",
     "avatar_url": "https://avatars.githubusercontent.com/u/115043334?v=4",
-    "html_url": "https://github.com/danielxnj"
+    "html_url": "https://github.com/danielxnj",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -8431,7 +8653,9 @@
     "weighted_pr_quality_average": 69,
     "name": "Odin Kammerloher",
     "avatar_url": "https://avatars.githubusercontent.com/u/246706791?v=4",
-    "html_url": "https://github.com/odin-posthog"
+    "html_url": "https://github.com/odin-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8469,7 +8693,9 @@
     "weighted_pr_quality_average": 87.5,
     "name": "ruby childs",
     "avatar_url": "https://avatars.githubusercontent.com/u/1305077?v=4",
-    "html_url": "https://github.com/rubychilds"
+    "html_url": "https://github.com/rubychilds",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8506,7 +8732,9 @@
     "weighted_pr_quality_average": 75.5,
     "name": "Mike Warren",
     "avatar_url": "https://avatars.githubusercontent.com/u/37048138?v=4",
-    "html_url": "https://github.com/mjwarren3"
+    "html_url": "https://github.com/mjwarren3",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8543,7 +8771,9 @@
     "weighted_pr_quality_average": 73,
     "name": "Vincent (Wen Yu) Ge",
     "avatar_url": "https://avatars.githubusercontent.com/u/29069505?v=4",
-    "html_url": "https://github.com/gewenyu99"
+    "html_url": "https://github.com/gewenyu99",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8622,7 +8852,9 @@
     "weighted_pr_quality_average": 87,
     "name": "Danilo Campos",
     "avatar_url": "https://avatars.githubusercontent.com/u/213358?v=4",
-    "html_url": "https://github.com/daniloc"
+    "html_url": "https://github.com/daniloc",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8661,7 +8893,9 @@
     "weighted_pr_quality_average": 81,
     "name": "Sven Lange",
     "avatar_url": "https://avatars.githubusercontent.com/u/6960726?v=4",
-    "html_url": "https://github.com/langesven"
+    "html_url": "https://github.com/langesven",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8713,7 +8947,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Joe Martin",
     "avatar_url": "https://avatars.githubusercontent.com/u/84011561?v=4",
-    "html_url": "https://github.com/joethreepwood"
+    "html_url": "https://github.com/joethreepwood",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8750,7 +8986,9 @@
     "weighted_pr_quality_average": 72.5,
     "name": "Marce Coll",
     "avatar_url": "https://avatars.githubusercontent.com/u/231317731?v=4",
-    "html_url": "https://github.com/mcoll-posthog"
+    "html_url": "https://github.com/mcoll-posthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8787,7 +9025,9 @@
     "weighted_pr_quality_average": 79,
     "name": "Eleftheria Trivyzaki",
     "avatar_url": "https://avatars.githubusercontent.com/u/227136712?v=4",
-    "html_url": "https://github.com/eleftheriatrivyzaki"
+    "html_url": "https://github.com/eleftheriatrivyzaki",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8825,7 +9065,9 @@
     "weighted_pr_quality_average": 78.5,
     "name": "coryslater",
     "avatar_url": "https://avatars.githubusercontent.com/u/25396141?v=4",
-    "html_url": "https://github.com/fivestarspicy"
+    "html_url": "https://github.com/fivestarspicy",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -8862,7 +9104,9 @@
     "weighted_pr_quality_average": 78,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/130782884?v=4",
-    "html_url": "https://github.com/okxint"
+    "html_url": "https://github.com/okxint",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -8900,7 +9144,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "willwearing",
     "avatar_url": "https://avatars.githubusercontent.com/u/47907933?v=4",
-    "html_url": "https://github.com/willwearing"
+    "html_url": "https://github.com/willwearing",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8950,7 +9196,9 @@
     "weighted_pr_quality_average": 76,
     "name": "Michi",
     "avatar_url": "https://avatars.githubusercontent.com/u/186825170?v=4",
-    "html_url": "https://github.com/MichaelKutsch-ph"
+    "html_url": "https://github.com/MichaelKutsch-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -8988,7 +9236,9 @@
     "weighted_pr_quality_average": 87.5,
     "name": "Andre de Vries",
     "avatar_url": "https://avatars.githubusercontent.com/u/22317522?v=4",
-    "html_url": "https://github.com/andre347"
+    "html_url": "https://github.com/andre347",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9026,7 +9276,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Kyle Swank",
     "avatar_url": "https://avatars.githubusercontent.com/u/89221808?v=4",
-    "html_url": "https://github.com/kyleswank"
+    "html_url": "https://github.com/kyleswank",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9064,7 +9316,9 @@
     "weighted_pr_quality_average": 78,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/181385999?v=4",
-    "html_url": "https://github.com/HaynesPostHog"
+    "html_url": "https://github.com/HaynesPostHog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -9114,7 +9368,9 @@
     "weighted_pr_quality_average": 65.5,
     "name": "Edwin Lim",
     "avatar_url": "https://avatars.githubusercontent.com/u/1308609?v=4",
-    "html_url": "https://github.com/edwinyjlim"
+    "html_url": "https://github.com/edwinyjlim",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9166,7 +9422,9 @@
     "weighted_pr_quality_average": 82,
     "name": "Sinan Kucukkoseler",
     "avatar_url": "https://avatars.githubusercontent.com/u/44866275?v=4",
-    "html_url": "https://github.com/sinan-ku"
+    "html_url": "https://github.com/sinan-ku",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9204,7 +9462,9 @@
     "weighted_pr_quality_average": 84,
     "name": "Anna Szell",
     "avatar_url": "https://avatars.githubusercontent.com/u/44681388?v=4",
-    "html_url": "https://github.com/annaszell"
+    "html_url": "https://github.com/annaszell",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9242,7 +9502,9 @@
     "weighted_pr_quality_average": 90.5,
     "name": "Benjamin Knofe-Vider",
     "avatar_url": "https://avatars.githubusercontent.com/u/124513?v=4",
-    "html_url": "https://github.com/benben"
+    "html_url": "https://github.com/benben",
+    "posthog_org_verified": true,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9294,7 +9556,9 @@
     "weighted_pr_quality_average": 89.5,
     "name": "Christophe Eynius Tranberg",
     "avatar_url": "https://avatars.githubusercontent.com/u/119332946?v=4",
-    "html_url": "https://github.com/ceyniustranberg"
+    "html_url": "https://github.com/ceyniustranberg",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9332,7 +9596,9 @@
     "weighted_pr_quality_average": 61,
     "name": "Phill",
     "avatar_url": "https://avatars.githubusercontent.com/u/14913130?v=4",
-    "html_url": "https://github.com/phillram"
+    "html_url": "https://github.com/phillram",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9370,7 +9636,9 @@
     "weighted_pr_quality_average": 83,
     "name": "Mohammed Malik",
     "avatar_url": "https://avatars.githubusercontent.com/u/47276307?v=4",
-    "html_url": "https://github.com/buildwithmalik"
+    "html_url": "https://github.com/buildwithmalik",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -9407,7 +9675,9 @@
     "weighted_pr_quality_average": 75,
     "name": "HARIHARAN ",
     "avatar_url": "https://avatars.githubusercontent.com/u/153547223?v=4",
-    "html_url": "https://github.com/harihran-del"
+    "html_url": "https://github.com/harihran-del",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9445,7 +9715,9 @@
     "weighted_pr_quality_average": 83.5,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/52993274?v=4",
-    "html_url": "https://github.com/danazou"
+    "html_url": "https://github.com/danazou",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9483,7 +9755,9 @@
     "weighted_pr_quality_average": 72,
     "name": "Annika 🦔",
     "avatar_url": "https://avatars.githubusercontent.com/u/14750837?v=4",
-    "html_url": "https://github.com/annikaschmid"
+    "html_url": "https://github.com/annikaschmid",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9520,7 +9794,9 @@
     "weighted_pr_quality_average": 70,
     "name": "Charles Cook",
     "avatar_url": "https://avatars.githubusercontent.com/u/70321811?v=4",
-    "html_url": "https://github.com/charlescook-ph"
+    "html_url": "https://github.com/charlescook-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9558,7 +9834,9 @@
     "weighted_pr_quality_average": 81,
     "name": "Luca Zani",
     "avatar_url": "https://avatars.githubusercontent.com/u/59318963?v=4",
-    "html_url": "https://github.com/zaniluca"
+    "html_url": "https://github.com/zaniluca",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9610,7 +9888,9 @@
     "weighted_pr_quality_average": 88,
     "name": "Stephen Schmidt",
     "avatar_url": "https://avatars.githubusercontent.com/u/7338027?v=4",
-    "html_url": "https://github.com/Z3r0Sum"
+    "html_url": "https://github.com/Z3r0Sum",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9648,7 +9928,9 @@
     "weighted_pr_quality_average": 86,
     "name": "Ricardothe3rd",
     "avatar_url": "https://avatars.githubusercontent.com/u/107098269?v=4",
-    "html_url": "https://github.com/ricardothe3rd"
+    "html_url": "https://github.com/ricardothe3rd",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9685,7 +9967,9 @@
     "weighted_pr_quality_average": 79,
     "name": "Naseem Alnaji",
     "avatar_url": "https://avatars.githubusercontent.com/u/1920483?v=4",
-    "html_url": "https://github.com/naji247"
+    "html_url": "https://github.com/naji247",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9722,7 +10006,9 @@
     "weighted_pr_quality_average": 70,
     "name": "Mai .",
     "avatar_url": "https://avatars.githubusercontent.com/u/100221733?v=4",
-    "html_url": "https://github.com/vmaineng"
+    "html_url": "https://github.com/vmaineng",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9759,7 +10045,9 @@
     "weighted_pr_quality_average": 73.5,
     "name": "intentsolutions.io",
     "avatar_url": "https://avatars.githubusercontent.com/u/213859472?v=4",
-    "html_url": "https://github.com/jeremylongshore"
+    "html_url": "https://github.com/jeremylongshore",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9797,7 +10085,9 @@
     "weighted_pr_quality_average": 87.5,
     "name": "Sean Mallia",
     "avatar_url": "https://avatars.githubusercontent.com/u/274030095?v=4",
-    "html_url": "https://github.com/seanpem"
+    "html_url": "https://github.com/seanpem",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -9834,7 +10124,9 @@
     "weighted_pr_quality_average": 74,
     "name": "Mirco Boettcher",
     "avatar_url": "https://avatars.githubusercontent.com/u/97905856?v=4",
-    "html_url": "https://github.com/mircoboettcher"
+    "html_url": "https://github.com/mircoboettcher",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9872,7 +10164,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "Kliment Minchev",
     "avatar_url": "https://avatars.githubusercontent.com/u/61919865?v=4",
-    "html_url": "https://github.com/kliment-slice"
+    "html_url": "https://github.com/kliment-slice",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9910,7 +10204,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Abigail",
     "avatar_url": "https://avatars.githubusercontent.com/u/51999607?v=4",
-    "html_url": "https://github.com/abigailbramble"
+    "html_url": "https://github.com/abigailbramble",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -9946,7 +10242,9 @@
     "weighted_pr_quality_average": 74.5,
     "name": "Coen Stevens",
     "avatar_url": "https://avatars.githubusercontent.com/u/90617?v=4",
-    "html_url": "https://github.com/beatlevic"
+    "html_url": "https://github.com/beatlevic",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10058,7 +10356,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": null,
     "avatar_url": null,
-    "html_url": "https://github.com/Copilot"
+    "html_url": "https://github.com/Copilot",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -10095,7 +10395,9 @@
     "weighted_pr_quality_average": 66.5,
     "name": "Parin Porecha",
     "avatar_url": "https://avatars.githubusercontent.com/u/3040811?v=4",
-    "html_url": "https://github.com/parinporecha"
+    "html_url": "https://github.com/parinporecha",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10133,7 +10435,9 @@
     "weighted_pr_quality_average": 87,
     "name": "Mathuranath Metivier",
     "avatar_url": "https://avatars.githubusercontent.com/u/29111834?v=4",
-    "html_url": "https://github.com/matt-metivier"
+    "html_url": "https://github.com/matt-metivier",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10171,7 +10475,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "zug",
     "avatar_url": "https://avatars.githubusercontent.com/u/155616000?v=4",
-    "html_url": "https://github.com/zugdev"
+    "html_url": "https://github.com/zugdev",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10221,7 +10527,9 @@
     "weighted_pr_quality_average": 77.5,
     "name": "Tommy Gilmore",
     "avatar_url": "https://avatars.githubusercontent.com/u/10407007?v=4",
-    "html_url": "https://github.com/tpgilmore"
+    "html_url": "https://github.com/tpgilmore",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10258,7 +10566,9 @@
     "weighted_pr_quality_average": 77.5,
     "name": "Bill Guowei Yang",
     "avatar_url": "https://avatars.githubusercontent.com/u/244088850?v=4",
-    "html_url": "https://github.com/bill-ph"
+    "html_url": "https://github.com/bill-ph",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10297,7 +10607,9 @@
     "weighted_pr_quality_average": 82.5,
     "name": "Lucky negi",
     "avatar_url": "https://avatars.githubusercontent.com/u/91773416?v=4",
-    "html_url": "https://github.com/igennova"
+    "html_url": "https://github.com/igennova",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10335,7 +10647,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Jaydeep pipaliya",
     "avatar_url": "https://avatars.githubusercontent.com/u/71074587?v=4",
-    "html_url": "https://github.com/jaydeep-pipaliya"
+    "html_url": "https://github.com/jaydeep-pipaliya",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10373,7 +10687,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "eason",
     "avatar_url": "https://avatars.githubusercontent.com/u/85663565?v=4",
-    "html_url": "https://github.com/mango766"
+    "html_url": "https://github.com/mango766",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10411,7 +10727,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Kenji",
     "avatar_url": "https://avatars.githubusercontent.com/u/679022?v=4",
-    "html_url": "https://github.com/Kenji-K"
+    "html_url": "https://github.com/Kenji-K",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10448,7 +10766,9 @@
     "weighted_pr_quality_average": 78.5,
     "name": "Cal",
     "avatar_url": "https://avatars.githubusercontent.com/u/99893432?v=4",
-    "html_url": "https://github.com/adityachaudhary99"
+    "html_url": "https://github.com/adityachaudhary99",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10513,7 +10833,9 @@
     "weighted_pr_quality_average": 80,
     "name": "Jakob Homan",
     "avatar_url": "https://avatars.githubusercontent.com/u/95350?v=4",
-    "html_url": "https://github.com/jghoman"
+    "html_url": "https://github.com/jghoman",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10552,7 +10874,9 @@
     "weighted_pr_quality_average": 80.5,
     "name": "Suyadi",
     "avatar_url": "https://avatars.githubusercontent.com/u/104284194?v=4",
-    "html_url": "https://github.com/afsuyadi"
+    "html_url": "https://github.com/afsuyadi",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -10590,7 +10914,9 @@
     "weighted_pr_quality_average": 81.5,
     "name": "aly fulton",
     "avatar_url": "https://avatars.githubusercontent.com/u/5157195?v=4",
-    "html_url": "https://github.com/sinthetix"
+    "html_url": "https://github.com/sinthetix",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10628,7 +10954,9 @@
     "weighted_pr_quality_average": 87,
     "name": "Muskan Agarwal",
     "avatar_url": "https://avatars.githubusercontent.com/u/108522561?v=4",
-    "html_url": "https://github.com/Muskaan436"
+    "html_url": "https://github.com/Muskaan436",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10666,7 +10994,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Matt Van Horn",
     "avatar_url": "https://avatars.githubusercontent.com/u/455140?v=4",
-    "html_url": "https://github.com/mvanhorn"
+    "html_url": "https://github.com/mvanhorn",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10704,7 +11034,9 @@
     "weighted_pr_quality_average": 85.5,
     "name": "Alex Párraga Ferrer",
     "avatar_url": "https://avatars.githubusercontent.com/u/62766970?v=4",
-    "html_url": "https://github.com/a96lex"
+    "html_url": "https://github.com/a96lex",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10742,7 +11074,9 @@
     "weighted_pr_quality_average": 82,
     "name": "Basit Balogun",
     "avatar_url": "https://avatars.githubusercontent.com/u/68718781?v=4",
-    "html_url": "https://github.com/Basit-Balogun10"
+    "html_url": "https://github.com/Basit-Balogun10",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 2.5,
@@ -10780,7 +11114,9 @@
     "weighted_pr_quality_average": 64,
     "name": "Eli Kinsey",
     "avatar_url": "https://avatars.githubusercontent.com/u/28248250?v=4",
-    "html_url": "https://github.com/smallbrownbike"
+    "html_url": "https://github.com/smallbrownbike",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10818,7 +11154,9 @@
     "weighted_pr_quality_average": 83.5,
     "name": "Brandon Julio Thenaro",
     "avatar_url": "https://avatars.githubusercontent.com/u/44537252?v=4",
-    "html_url": "https://github.com/brandon-julio-t"
+    "html_url": "https://github.com/brandon-julio-t",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10855,7 +11193,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "gui martins",
     "avatar_url": "https://avatars.githubusercontent.com/u/101740267?v=4",
-    "html_url": "https://github.com/oddgarden6465"
+    "html_url": "https://github.com/oddgarden6465",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10893,7 +11233,9 @@
     "weighted_pr_quality_average": 72,
     "name": "Lucas Flores",
     "avatar_url": "https://avatars.githubusercontent.com/u/68703172?v=4",
-    "html_url": "https://github.com/lucashflores"
+    "html_url": "https://github.com/lucashflores",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10931,7 +11273,9 @@
     "weighted_pr_quality_average": 86,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/36782438?v=4",
-    "html_url": "https://github.com/praneya0028"
+    "html_url": "https://github.com/praneya0028",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -10969,7 +11313,9 @@
     "weighted_pr_quality_average": 83,
     "name": "Big John",
     "avatar_url": "https://avatars.githubusercontent.com/u/148793858?v=4",
-    "html_url": "https://github.com/bigjohnn1"
+    "html_url": "https://github.com/bigjohnn1",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11007,7 +11353,9 @@
     "weighted_pr_quality_average": 89,
     "name": "Leon Daly",
     "avatar_url": "https://avatars.githubusercontent.com/u/172495592?v=4",
-    "html_url": "https://github.com/leonposthog"
+    "html_url": "https://github.com/leonposthog",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11045,7 +11393,9 @@
     "weighted_pr_quality_average": 73,
     "name": "Patrick",
     "avatar_url": "https://avatars.githubusercontent.com/u/11362913?v=4",
-    "html_url": "https://github.com/ptrkstr"
+    "html_url": "https://github.com/ptrkstr",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 2.5,
@@ -11082,7 +11432,9 @@
     "weighted_pr_quality_average": 64,
     "name": "Hector Rodriguez",
     "avatar_url": "https://avatars.githubusercontent.com/u/207092030?v=4",
-    "html_url": "https://github.com/hector-r-759"
+    "html_url": "https://github.com/hector-r-759",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11119,7 +11471,9 @@
     "weighted_pr_quality_average": 70.5,
     "name": "Shen Li",
     "avatar_url": "https://avatars.githubusercontent.com/u/4508461?v=4",
-    "html_url": "https://github.com/ericls"
+    "html_url": "https://github.com/ericls",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11156,7 +11510,9 @@
     "weighted_pr_quality_average": 63,
     "name": "Rabuma A. Bekele",
     "avatar_url": "https://avatars.githubusercontent.com/u/181015597?v=4",
-    "html_url": "https://github.com/rabumaabraham"
+    "html_url": "https://github.com/rabumaabraham",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11194,7 +11550,9 @@
     "weighted_pr_quality_average": 80,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/212032918?v=4",
-    "html_url": "https://github.com/aaug1-unify"
+    "html_url": "https://github.com/aaug1-unify",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11232,7 +11590,9 @@
     "weighted_pr_quality_average": 85,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/56287180?v=4",
-    "html_url": "https://github.com/camerondeleone"
+    "html_url": "https://github.com/camerondeleone",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11269,7 +11629,9 @@
     "weighted_pr_quality_average": 71.5,
     "name": "Archie Sarre Wood",
     "avatar_url": "https://avatars.githubusercontent.com/u/58074498?v=4",
-    "html_url": "https://github.com/archiewood"
+    "html_url": "https://github.com/archiewood",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11307,7 +11669,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Mikhail Ilin",
     "avatar_url": "https://avatars.githubusercontent.com/u/1325864?v=4",
-    "html_url": "https://github.com/sbrin"
+    "html_url": "https://github.com/sbrin",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11344,7 +11708,9 @@
     "weighted_pr_quality_average": 67.5,
     "name": "Orlando Hohmeier",
     "avatar_url": "https://avatars.githubusercontent.com/u/647035?v=4",
-    "html_url": "https://github.com/orlandohohmeier"
+    "html_url": "https://github.com/orlandohohmeier",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -11381,7 +11747,9 @@
     "weighted_pr_quality_average": 62,
     "name": "Andrea Zanotto",
     "avatar_url": "https://avatars.githubusercontent.com/u/163165665?v=4",
-    "html_url": "https://github.com/sipa-echo-zaoa"
+    "html_url": "https://github.com/sipa-echo-zaoa",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11419,7 +11787,9 @@
     "weighted_pr_quality_average": 86.5,
     "name": "Nakshatra Nahar",
     "avatar_url": "https://avatars.githubusercontent.com/u/46734231?v=4",
-    "html_url": "https://github.com/nakshatra-nahar"
+    "html_url": "https://github.com/nakshatra-nahar",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11455,7 +11825,9 @@
     "weighted_pr_quality_average": 75,
     "name": "Safin Mahmud",
     "avatar_url": "https://avatars.githubusercontent.com/u/16037087?v=4",
-    "html_url": "https://github.com/SafinMahmud"
+    "html_url": "https://github.com/SafinMahmud",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11492,7 +11864,9 @@
     "weighted_pr_quality_average": 71,
     "name": "Mattia Gaggi",
     "avatar_url": "https://avatars.githubusercontent.com/u/23139796?v=4",
-    "html_url": "https://github.com/mattiagaggi"
+    "html_url": "https://github.com/mattiagaggi",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11529,7 +11903,9 @@
     "weighted_pr_quality_average": 72.5,
     "name": "Akash Santra",
     "avatar_url": "https://avatars.githubusercontent.com/u/199394642?v=4",
-    "html_url": "https://github.com/Akash504-ai"
+    "html_url": "https://github.com/Akash504-ai",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11566,7 +11942,9 @@
     "weighted_pr_quality_average": 79,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/29609528?v=4",
-    "html_url": "https://github.com/shauryapednekar"
+    "html_url": "https://github.com/shauryapednekar",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11604,7 +11982,9 @@
     "weighted_pr_quality_average": 72,
     "name": "Danny Schofield",
     "avatar_url": "https://avatars.githubusercontent.com/u/22655472?v=4",
-    "html_url": "https://github.com/dschofie"
+    "html_url": "https://github.com/dschofie",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11642,7 +12022,9 @@
     "weighted_pr_quality_average": 65,
     "name": "James Hawkins",
     "avatar_url": "https://avatars.githubusercontent.com/u/47497682?v=4",
-    "html_url": "https://github.com/jamesefhawkins"
+    "html_url": "https://github.com/jamesefhawkins",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11680,7 +12062,9 @@
     "weighted_pr_quality_average": 64,
     "name": "David",
     "avatar_url": "https://avatars.githubusercontent.com/u/37255403?v=4",
-    "html_url": "https://github.com/Classy-Bear"
+    "html_url": "https://github.com/Classy-Bear",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11718,7 +12102,9 @@
     "weighted_pr_quality_average": 65,
     "name": "Alexandr Kozhevnikov",
     "avatar_url": "https://avatars.githubusercontent.com/u/58553529?v=4",
-    "html_url": "https://github.com/alex-kozh"
+    "html_url": "https://github.com/alex-kozh",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 2,
@@ -11754,7 +12140,9 @@
     "weighted_pr_quality_average": 74.5,
     "name": "Madelyn ",
     "avatar_url": "https://avatars.githubusercontent.com/u/190018919?v=4",
-    "html_url": "https://github.com/developers-universe-1"
+    "html_url": "https://github.com/developers-universe-1",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11792,7 +12180,9 @@
     "weighted_pr_quality_average": 78.5,
     "name": "Caíque Porfirio",
     "avatar_url": "https://avatars.githubusercontent.com/u/56317416?v=4",
-    "html_url": "https://github.com/caiquejjx"
+    "html_url": "https://github.com/caiquejjx",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11830,7 +12220,9 @@
     "weighted_pr_quality_average": 88,
     "name": "Zach Waterfield",
     "avatar_url": "https://avatars.githubusercontent.com/u/6392501?v=4",
-    "html_url": "https://github.com/zlwaterfield"
+    "html_url": "https://github.com/zlwaterfield",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11867,7 +12259,9 @@
     "weighted_pr_quality_average": 65.5,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/16662014?v=4",
-    "html_url": "https://github.com/darkLord19"
+    "html_url": "https://github.com/darkLord19",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11904,7 +12298,9 @@
     "weighted_pr_quality_average": 67.5,
     "name": "Anthony Lio",
     "avatar_url": "https://avatars.githubusercontent.com/u/14966155?v=4",
-    "html_url": "https://github.com/antlio"
+    "html_url": "https://github.com/antlio",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -11942,7 +12338,9 @@
     "weighted_pr_quality_average": 78,
     "name": "Erez Rokah",
     "avatar_url": "https://avatars.githubusercontent.com/u/26760571?v=4",
-    "html_url": "https://github.com/erezrokah"
+    "html_url": "https://github.com/erezrokah",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -11980,7 +12378,9 @@
     "weighted_pr_quality_average": 87.5,
     "name": "Shao Wei",
     "avatar_url": "https://avatars.githubusercontent.com/u/33112945?v=4",
-    "html_url": "https://github.com/lshaowei18"
+    "html_url": "https://github.com/lshaowei18",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -12017,7 +12417,9 @@
     "weighted_pr_quality_average": 65.5,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/95654598?v=4",
-    "html_url": "https://github.com/sayer122"
+    "html_url": "https://github.com/sayer122",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -12053,7 +12455,9 @@
     "weighted_pr_quality_average": 75.5,
     "name": "Abheek Basu",
     "avatar_url": "https://avatars.githubusercontent.com/u/7728266?v=4",
-    "html_url": "https://github.com/abheek9"
+    "html_url": "https://github.com/abheek9",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -12091,7 +12495,9 @@
     "weighted_pr_quality_average": 67.5,
     "name": "Will Marella",
     "avatar_url": "https://avatars.githubusercontent.com/u/162729147?v=4",
-    "html_url": "https://github.com/will-marella"
+    "html_url": "https://github.com/will-marella",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4.5,
@@ -12129,7 +12535,9 @@
     "weighted_pr_quality_average": 79.5,
     "name": "Salman Chishti",
     "avatar_url": "https://avatars.githubusercontent.com/u/32169182?v=4",
-    "html_url": "https://github.com/salmanmkc"
+    "html_url": "https://github.com/salmanmkc",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -12166,7 +12574,9 @@
     "weighted_pr_quality_average": 78.5,
     "name": "Sean Geiger",
     "avatar_url": "https://avatars.githubusercontent.com/u/14241240?v=4",
-    "html_url": "https://github.com/seangeiger"
+    "html_url": "https://github.com/seangeiger",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 4,
@@ -12203,7 +12613,9 @@
     "weighted_pr_quality_average": 64,
     "name": "Szymon Kurek",
     "avatar_url": "https://avatars.githubusercontent.com/u/91222506?v=4",
-    "html_url": "https://github.com/kurekszymon"
+    "html_url": "https://github.com/kurekszymon",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 2.5,
@@ -12240,7 +12652,9 @@
     "weighted_pr_quality_average": 63.5,
     "name": "Igor Macedo Quintanilha",
     "avatar_url": "https://avatars.githubusercontent.com/u/623536?v=4",
-    "html_url": "https://github.com/igormq"
+    "html_url": "https://github.com/igormq",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 1.5,
@@ -12277,7 +12691,9 @@
     "weighted_pr_quality_average": 66,
     "name": null,
     "avatar_url": "https://avatars.githubusercontent.com/u/28488260?v=4",
-    "html_url": "https://github.com/SaraMiteva"
+    "html_url": "https://github.com/SaraMiteva",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -12313,7 +12729,9 @@
     "weighted_pr_quality_average": 70.5,
     "name": "Adam Kapos",
     "avatar_url": "https://avatars.githubusercontent.com/u/431167?v=4",
-    "html_url": "https://github.com/Nezz"
+    "html_url": "https://github.com/Nezz",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   },
   {
     "communication_quality_average": 3.5,
@@ -12350,6 +12768,8 @@
     "weighted_pr_quality_average": 60.5,
     "name": "Jordan",
     "avatar_url": "https://avatars.githubusercontent.com/u/3543345?v=4",
-    "html_url": "https://github.com/JJCLane"
+    "html_url": "https://github.com/JJCLane",
+    "posthog_org_verified": false,
+    "posthog_org_membership_source": "github_public_org_membership_api"
   }
 ]

@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "re
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
 import {
+  BadgeCheck,
   BarChart3,
   CalendarDays,
   Check,
@@ -53,6 +54,8 @@ type ContributorQuality = {
   high_confidence_impact_count: number;
   impact_rank?: number;
   ownership_signal: number;
+  posthog_org_membership_source?: string;
+  posthog_org_verified?: boolean;
   provisional_impact_total?: number;
   quality_consistency_percent: number;
   quality_score: number;
@@ -240,6 +243,44 @@ function ContributorAvatar({ person, size = "sm" }: { person: ContributorQuality
   }
 
   return <span className={`contributor-avatar fallback ${size}`}>{displayName(person).slice(0, 1).toUpperCase()}</span>;
+}
+
+function VerifiedBadge({ person }: { person: ContributorQuality }) {
+  if (!person.posthog_org_verified) {
+    return null;
+  }
+
+  return (
+    <span className="verified-badge" title="Verified public member of the PostHog GitHub organization">
+      <BadgeCheck size={13} aria-hidden="true" />
+      Verified
+    </span>
+  );
+}
+
+function confidenceLevel(value: string) {
+  const normalized = value.toLowerCase();
+  if (normalized.includes("high")) {
+    return "high";
+  }
+  if (normalized.includes("medium") || normalized.includes("moderate")) {
+    return "medium";
+  }
+  if (normalized.includes("low")) {
+    return "low";
+  }
+  return "unknown";
+}
+
+function ConfidenceBadge({ value }: { value: string }) {
+  return (
+    <span className={`confidence-badge ${confidenceLevel(value)}`}>
+      {value} judgement confidence
+      <span className="mini-tooltip">
+        Confidence reflects how much visible GitHub evidence supports the judgement, including reviewed PR depth, source context, and public review signal.
+      </span>
+    </span>
+  );
 }
 
 function RankMarker({ rank }: { rank: number }) {
@@ -566,13 +607,13 @@ function PersonRow({
         <div className="person-name-line">
           <ContributorAvatar person={person} />
           <span>
-            <div className="handle">{displayName(person)}</div>
+            <div className="handle-line"><div className="handle">{displayName(person)}</div><VerifiedBadge person={person} /></div>
             {person.name ? <div className="subhandle">@{person.contributor}</div> : null}
           </span>
         </div>
         <div className="summary">{reasonFor(person, rank)}</div>
         <div className="metrics">
-          <span>{person.confidence} confidence</span>
+          <ConfidenceBadge value={person.confidence} />
           <span>{person.reviewed_pr_count} reviewed PRs</span>
           <span>{person.high_confidence_impact_count} high-confidence impact PRs</span>
         </div>
@@ -738,7 +779,7 @@ function Sidebar({
                 >
                   <span>{formatRank(index + 1)}</span>
                   <ContributorAvatar person={person} size="xs" />
-                  <b>{displayName(person)}</b>
+                  <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                   {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
                 </button>
@@ -761,7 +802,7 @@ function Sidebar({
                 >
                   <span>{formatRank(index + 1)}</span>
                   <ContributorAvatar person={person} size="xs" />
-                  <b>{displayName(person)}</b>
+                  <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                   {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
                 </button>
@@ -815,7 +856,7 @@ function LeaderboardHome({
             {topFive.map((person, index) => (
               <button className="quicklink" key={person.contributor} onClick={() => openContributor(index)}>
                 <span className="quicklink-rank"><RankMarker rank={index + 1} /></span>
-                <b>{displayName(person)}</b>
+                <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                 {person.name ? <span className="quicklink-handle">@{person.contributor}</span> : null}
                 <em>{formatNumber(person.quality_score)} quality score</em>
               </button>
@@ -857,12 +898,12 @@ function LeaderboardHome({
               {data.contributors.map((person, index) => (
                 <tr key={person.contributor}>
                   <td>{formatRank(index + 1)}</td>
-                  <td><span className="name-cell">{displayName(person)}{person.name ? <small>@{person.contributor}</small> : null}</span></td>
+                  <td><span className="name-cell"><span>{displayName(person)} <VerifiedBadge person={person} /></span>{person.name ? <small>@{person.contributor}</small> : null}</span></td>
                   <td>{formatNumber(person.quality_score)}</td>
                   <td>{formatNumber(person.reviewed_pr_count)}</td>
                   <td>{formatNumber(person.high_confidence_impact_count)}</td>
                   <td>{pct(person.quality_consistency_percent)}</td>
-                  <td>{person.confidence}</td>
+                  <td><ConfidenceBadge value={person.confidence} /></td>
                   <td>
                     <button className="table-link" onClick={() => openContributor(index)}>View profile</button>
                   </td>
@@ -909,14 +950,14 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
             <a className="selected-handle" href={profileUrl(person)} target="_blank" rel="noreferrer">
               {person.avatar_url ? <img src={person.avatar_url} alt="" /> : null}
               <span>
-                <b>{displayName(person)}</b>
+                <b>{displayName(person)} <VerifiedBadge person={person} /></b>
                 {person.name ? <small>@{person.contributor}</small> : null}
               </span>
             </a>
             <div className="selected-facts">
               <div><b>{formatNumber(person.reviewed_pr_count)}</b><span>Reviewed PRs</span></div>
               <div><b>{formatNumber(person.high_confidence_impact_count)}</b><span>High-confidence impact</span></div>
-              <div><b>{person.confidence}</b><span>Confidence</span></div>
+              <div><b><ConfidenceBadge value={person.confidence} /></b><span>Judgement confidence</span></div>
             </div>
           </div>
         </div>
@@ -1117,7 +1158,7 @@ function RawDataView({ data, table }: { data: AnalysisDashboard; table: RawTable
                 {data.contributors.map((person, index) => (
                   <tr key={person.contributor}>
                     <td>{formatRank(index + 1)}</td>
-                    <td><span className="name-cell">{displayName(person)}{person.name ? <small>@{person.contributor}</small> : null}</span></td>
+                    <td><span className="name-cell"><span>{displayName(person)} <VerifiedBadge person={person} /></span>{person.name ? <small>@{person.contributor}</small> : null}</span></td>
                     <td>{formatNumber(person.quality_score)}</td>
                     <td>{formatNumber(person.reviewed_pr_count)}</td>
                     <td>{pct(person.review_leverage_quality)}</td>
