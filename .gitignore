@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vercel/
+*.tsbuildinfo
+
+# Raw ingestion caches are reproducible and too large/noisy for the submission repo.
+data/raw_pr_records.json
+data/daily_graphql/
+

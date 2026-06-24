@@ -1,0 +1,1009 @@
+[
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "Gilbert09",
+    "executive_summary": "Gilbert09 shows high-confidence quality evidence across 8 sampled PRs, with strongest signal in Data warehouse, Backend services, Developer experience.",
+    "high_confidence_impact_count": 7,
+    "ownership_signal": 5.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 82.8,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/62913",
+      "https://github.com/PostHog/posthog/pull/61146",
+      "https://github.com/PostHog/posthog/pull/65503",
+      "https://github.com/PostHog/posthog/pull/65281",
+      "https://github.com/PostHog/posthog/pull/65323#pullrequestreview-4553297262",
+      "https://github.com/PostHog/posthog/pull/65450#pullrequestreview-4553401671"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65323,
+        "pr_title": "feat(data-warehouse): resolve duckgres data-import schema from team table_suffix",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65323",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65323#pullrequestreview-4553297262"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65450,
+        "pr_title": "fix(logs): read Map attributes by logical key without JSONExtract",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65450",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65450#pullrequestreview-4553401671"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65438,
+        "pr_title": "fix(data-warehouse): show schema label instead of raw id in sync failure digest",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65438",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65438#pullrequestreview-4553277335"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Some tests covering the base source class would be good here",
+        "pr_number": 65329,
+        "pr_title": "feat(data-warehouse): row filters + column selection for clickhouse",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65329",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65329#pullrequestreview-4553287655"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65326,
+        "pr_title": "fix(data-warehouse): show cumulative row count for xmin schemas",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65326",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65326#pullrequestreview-4553291721"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 50.0,
+    "reviewed_pr_count": 8,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "1 reviewed PR(s) do not show test files in the GitHub file list.",
+      "Very high PR volume includes repeated data-warehouse scaffolding, so mechanical impact can overstate novelty."
+    ],
+    "score_distribution": {
+      "max": 88.0,
+      "median": 83.8,
+      "min": 71.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 82.8/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "7 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Data warehouse, Backend services, Developer experience."
+    ],
+    "weighted_pr_quality_average": 82.8
+  },
+  {
+    "communication_quality_average": 4.06,
+    "confidence": "high",
+    "contributor": "pauldambra",
+    "executive_summary": "pauldambra shows high-confidence quality evidence across 8 sampled PRs, with strongest signal in Frontend product UI, Developer experience, Insights / Product analytics.",
+    "high_confidence_impact_count": 2,
+    "ownership_signal": 3.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 79.2,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/64999",
+      "https://github.com/PostHog/posthog/pull/63443",
+      "https://github.com/PostHog/posthog/pull/65502",
+      "https://github.com/PostHog/posthog/pull/63882",
+      "https://github.com/PostHog/posthog/pull/65563#pullrequestreview-4555899001",
+      "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4509828039"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65563,
+        "pr_title": "fix(eng-analytics): drop tab-aware scene logic that 404'd the scene",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65563",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65563#pullrequestreview-4555899001"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "i think this idea is also a weighting so we could have 1000 jest tests or python test that don't depend on django for every 10 that depend on django or every 1 playrwight test so it's not \"don't just add coverage\" but \"w",
+        "pr_number": 64117,
+        "pr_title": "chore: add writing-tests skill to gate new test value and cost",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64117",
+        "review_quality_percent": 90.0,
+        "review_quality_score": 4.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4509828039",
+          "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4509838610",
+          "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4509973186",
+          "https://github.com/PostHog/posthog/pull/64117#discussion_r3423593637",
+          "https://github.com/PostHog/posthog/pull/64117#discussion_r3423602451"
+        ],
+        "substantive": true
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65137,
+        "pr_title": "fix(agent-platform): serve /metrics on the main server in local dev",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65137",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65137#pullrequestreview-4542876218"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65036,
+        "pr_title": "feat(signals): bring cloud inbox custom events in line with desktop",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65036",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65036#pullrequestreview-4538574909"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "i guess the MCP knows how to list recordings and we should gate this order option by flag there too",
+        "pr_number": 64854,
+        "pr_title": "feat(replay): add 'relevant' surfacing_score sort to playlist",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64854",
+        "review_quality_percent": 70.0,
+        "review_quality_score": 3.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64854#pullrequestreview-4533142682"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 62.0,
+    "reviewed_pr_count": 8,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "4 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 88.0,
+      "median": 77.8,
+      "min": 72.5
+    },
+    "top_strengths": [
+      "Reviewed PRs average 79.4/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "2 reviewed PR(s) clear the >=80 high-confidence-impact threshold."
+    ],
+    "weighted_pr_quality_average": 79.4
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "sampennington",
+    "executive_summary": "sampennington shows high-confidence quality evidence across 8 sampled PRs, with strongest signal in Frontend product UI, Insights / Product analytics, Developer experience.",
+    "high_confidence_impact_count": 6,
+    "ownership_signal": 5.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 82.7,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/64827",
+      "https://github.com/PostHog/posthog/pull/63907",
+      "https://github.com/PostHog/posthog/pull/65295",
+      "https://github.com/PostHog/posthog/pull/64901",
+      "https://github.com/PostHog/posthog/pull/65588#pullrequestreview-4556450273",
+      "https://github.com/PostHog/posthog/pull/65523#pullrequestreview-4555093716"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65588,
+        "pr_title": "fix: repair broken posthog-js entry in pnpm lockfile",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65588",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65588#pullrequestreview-4556450273"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65523,
+        "pr_title": "fix(insights): humanize event name in stickiness actors modal",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65523",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65523#pullrequestreview-4555093716"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65477,
+        "pr_title": "fix(insights): capitalize stickiness chart tooltip labels",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65477",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65477#pullrequestreview-4554412826"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "\ud83d\ude4c",
+        "pr_number": 65409,
+        "pr_title": "feat(mcp): add query-funnel-actors tool",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65409",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65409#pullrequestreview-4554051220"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65396,
+        "pr_title": "fix(mcp): render distinct bars for funnel steps with duplicate names",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65396",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65396#pullrequestreview-4552796084"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 50.0,
+    "reviewed_pr_count": 8,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "2 reviewed PR(s) have sparse public review discussion."
+    ],
+    "score_distribution": {
+      "max": 86.5,
+      "median": 83.2,
+      "min": 76.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 82.7/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "6 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Frontend product UI, Insights / Product analytics, Developer experience."
+    ],
+    "weighted_pr_quality_average": 82.7
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "andrewm4894",
+    "executive_summary": "andrewm4894 shows high-confidence quality evidence across 8 sampled PRs, with strongest signal in Frontend product UI, MCP / Coding agents, Backend services.",
+    "high_confidence_impact_count": 4,
+    "ownership_signal": 5.0,
+    "quality_consistency_percent": 87.5,
+    "quality_score": 79.5,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/63493",
+      "https://github.com/PostHog/posthog/pull/62058",
+      "https://github.com/PostHog/posthog/pull/57760",
+      "https://github.com/PostHog/posthog/pull/62394",
+      "https://github.com/PostHog/posthog/pull/65502#pullrequestreview-4554772629",
+      "https://github.com/PostHog/posthog/pull/65552#pullrequestreview-4555669198"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65502,
+        "pr_title": "feat(signals): add APM spans to inbox load endpoints",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65502",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65502#pullrequestreview-4554772629"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65552,
+        "pr_title": "fix(tasks): polish task run detail page layout",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65552",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65552#pullrequestreview-4555669198"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65535,
+        "pr_title": "revert: diagnostic support agent with safety guardrails",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65535",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65535#pullrequestreview-4555297978"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65526,
+        "pr_title": "feat(inbox): add a usage section",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65526",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65526#pullrequestreview-4555131194"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65532,
+        "pr_title": "chore(signals): raise llm gateway cost limits for signals",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65532",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65532#pullrequestreview-4555252111"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 50.0,
+    "reviewed_pr_count": 8,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "4 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 90.0,
+      "median": 82.8,
+      "min": 63.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 81.1/100 after impact-weighting.",
+      "87.5% of reviewed PRs score at least 70.",
+      "4 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Frontend product UI, MCP / Coding agents, Backend services."
+    ],
+    "weighted_pr_quality_average": 81.1
+  },
+  {
+    "communication_quality_average": 4.06,
+    "confidence": "high",
+    "contributor": "rnegron",
+    "executive_summary": "rnegron shows high-confidence quality evidence across 8 sampled PRs, with strongest signal in Developer experience, Infrastructure / CI, MCP / Coding agents.",
+    "high_confidence_impact_count": 6,
+    "ownership_signal": 5.0,
+    "quality_consistency_percent": 87.5,
+    "quality_score": 80.5,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/64027",
+      "https://github.com/PostHog/posthog/pull/59440",
+      "https://github.com/PostHog/posthog/pull/64351",
+      "https://github.com/PostHog/posthog/pull/62699",
+      "https://github.com/PostHog/posthog/pull/65588#pullrequestreview-4556457082",
+      "https://github.com/PostHog/posthog/pull/65432#pullrequestreview-4556689509"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65588,
+        "pr_title": "fix: repair broken posthog-js entry in pnpm lockfile",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65588",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65588#pullrequestreview-4556457082"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65432,
+        "pr_title": "feat(engineering_analytics): add branch filter and failure tracking to workflow health",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65432",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65432#pullrequestreview-4556689509"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65466,
+        "pr_title": "chore(devex): upgrade kea-typegen to 3.7.0",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65466",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65466#pullrequestreview-4553811492"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65459,
+        "pr_title": "chore(dags): fix dagster local dev port from 3000 to 3030",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65459",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65459#pullrequestreview-4553916714"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "cool, glad we are using hogli's `workflow_lint` more!",
+        "pr_number": 64497,
+        "pr_title": "chore(devex): dedup pnpm cache and gate cache writes in CI",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64497",
+        "review_quality_percent": 80.0,
+        "review_quality_score": 4.0,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64497#pullrequestreview-4525562649",
+          "https://github.com/PostHog/posthog/pull/64497#discussion_r3436362361"
+        ],
+        "substantive": true
+      }
+    ],
+    "review_leverage_quality": 56.0,
+    "reviewed_pr_count": 8,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "3 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 88.0,
+      "median": 80.2,
+      "min": 66.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 81.0/100 after impact-weighting.",
+      "87.5% of reviewed PRs score at least 70.",
+      "6 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Developer experience, Infrastructure / CI, MCP / Coding agents."
+    ],
+    "weighted_pr_quality_average": 81.0
+  },
+  {
+    "communication_quality_average": 3.9,
+    "confidence": "high",
+    "contributor": "webjunkie",
+    "executive_summary": "webjunkie shows high-confidence quality evidence across 5 sampled PRs, with strongest signal in Backend services, Developer experience, MCP / Coding agents.",
+    "high_confidence_impact_count": 4,
+    "ownership_signal": 4.0,
+    "quality_consistency_percent": 80.0,
+    "quality_score": 77.7,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/64207",
+      "https://github.com/PostHog/posthog/pull/65432",
+      "https://github.com/PostHog/posthog/pull/64479",
+      "https://github.com/PostHog/posthog/pull/65222",
+      "https://github.com/PostHog/posthog/pull/65485#pullrequestreview-4556344692",
+      "https://github.com/PostHog/posthog/pull/65473#pullrequestreview-4556335420"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65485,
+        "pr_title": "chore(devex): exclude personhog proto from ty",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65485",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65485#pullrequestreview-4556344692"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65473,
+        "pr_title": "chore(ci): remove dead ci-master-status workflow",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65473",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65473#pullrequestreview-4556335420"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Oookay let's see \ud83d\ude48",
+        "pr_number": 64715,
+        "pr_title": "chore(ci): swap deploy gate for image boot check",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64715",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64715#pullrequestreview-4556333078"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "A couple if things: 1.",
+        "pr_number": 64117,
+        "pr_title": "chore: add writing-tests skill to gate new test value and cost",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64117",
+        "review_quality_percent": 80.0,
+        "review_quality_score": 4.0,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4524136937",
+          "https://github.com/PostHog/posthog/pull/64117#pullrequestreview-4556357479",
+          "https://github.com/PostHog/posthog/pull/64117#discussion_r3435144080",
+          "https://github.com/PostHog/posthog/pull/64117#discussion_r3435149121"
+        ],
+        "substantive": true
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65290,
+        "pr_title": "refactor(notebooks): isolate behind facade and contracts",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65290",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65290#pullrequestreview-4551320748"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 56.0,
+    "reviewed_pr_count": 5,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 89.0,
+      "median": 86.5,
+      "min": 69.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 83.3/100 after impact-weighting.",
+      "80.0% of reviewed PRs score at least 70.",
+      "4 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Backend services, Developer experience, MCP / Coding agents."
+    ],
+    "weighted_pr_quality_average": 83.3
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "skoob13",
+    "executive_summary": "skoob13 shows high-confidence quality evidence across 5 sampled PRs, with strongest signal in Frontend product UI, Max AI / LLM, MCP / Coding agents.",
+    "high_confidence_impact_count": 2,
+    "ownership_signal": 3.0,
+    "quality_consistency_percent": 80.0,
+    "quality_score": 73.1,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/65463",
+      "https://github.com/PostHog/posthog/pull/65435",
+      "https://github.com/PostHog/posthog/pull/65442",
+      "https://github.com/PostHog/posthog/pull/65552",
+      "https://github.com/PostHog/posthog/pull/65503#pullrequestreview-4554847475",
+      "https://github.com/PostHog/posthog/pull/65560#pullrequestreview-4556249504"
+    ],
+    "review_interactions": [
+      {
+        "example": "This is awesome!",
+        "pr_number": 65503,
+        "pr_title": "feat(hogql): add system.information_schema for agentic schema discovery",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65503",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65503#pullrequestreview-4554847475"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65560,
+        "pr_title": "fix(inbox): show skeletons instead of placeholder badge/counts while loading",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65560",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65560#pullrequestreview-4556249504"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Thank you, was just fixing this!",
+        "pr_number": 65454,
+        "pr_title": "fix(max): don't crash the bare /ai scene when panelId is missing",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65454",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65454#pullrequestreview-4553464022"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "I'd use structured output here with retries: https://platform.claude.com/docs/en/build-with-claude/structured-outputs#using-native-schema-definitions.",
+        "pr_number": 65380,
+        "pr_title": "feat(conversations): triage support tickets before drafting",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65380",
+        "review_quality_percent": 90.0,
+        "review_quality_score": 4.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65380#pullrequestreview-4551685217",
+          "https://github.com/PostHog/posthog/pull/65380#pullrequestreview-4551691608",
+          "https://github.com/PostHog/posthog/pull/65380#pullrequestreview-4551736881",
+          "https://github.com/PostHog/posthog/pull/65380#discussion_r3458419724",
+          "https://github.com/PostHog/posthog/pull/65380#discussion_r3458425126"
+        ],
+        "substantive": true
+      },
+      {
+        "example": "Thank you for doing it!",
+        "pr_number": 65342,
+        "pr_title": "feat(mcp): generalize agent-feedback tool for any posthog feedback",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65342",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65342#pullrequestreview-4550368329"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 58.0,
+    "reviewed_pr_count": 5,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "3 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 82.0,
+      "median": 78.0,
+      "min": 68.0
+    },
+    "top_strengths": [
+      "80.0% of reviewed PRs score at least 70.",
+      "2 reviewed PR(s) clear the >=80 high-confidence-impact threshold."
+    ],
+    "weighted_pr_quality_average": 76.4
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "danielcarletti",
+    "executive_summary": "danielcarletti shows high-confidence quality evidence across 5 sampled PRs, with strongest signal in Data warehouse, Frontend product UI, Backend services.",
+    "high_confidence_impact_count": 4,
+    "ownership_signal": 5.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 83.8,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/65329",
+      "https://github.com/PostHog/posthog/pull/64933",
+      "https://github.com/PostHog/posthog/pull/64660",
+      "https://github.com/PostHog/posthog/pull/65458",
+      "https://github.com/PostHog/posthog/pull/64995#pullrequestreview-4557087967",
+      "https://github.com/PostHog/posthog/pull/65493#pullrequestreview-4555835915"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64995,
+        "pr_title": "fix(stripe): stop echoing the rejected key in the credentials error",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64995",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64995#pullrequestreview-4557087967"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "small comment move these inline imports to top of file",
+        "pr_number": 65493,
+        "pr_title": "fix(data-warehouse): run webhook-only check before bulk update txn",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65493",
+        "review_quality_percent": 60.0,
+        "review_quality_score": 3.0,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65493#pullrequestreview-4555835915",
+          "https://github.com/PostHog/posthog/pull/65493#discussion_r3461854181"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65110,
+        "pr_title": "fix(ws): make job terminal statuses absorbing to prevent race overwrites",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65110",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65110#pullrequestreview-4545478643"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64894,
+        "pr_title": "fix(data-warehouse): correct AppsFlyer v5 report slug, CSV format, and validation errors",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64894",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64894#pullrequestreview-4544334279"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64799,
+        "pr_title": "feat(data-warehouse): scaffold Chatwoot source",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64799",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64799#pullrequestreview-4532799598"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 52.0,
+    "reviewed_pr_count": 5,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion."
+    ],
+    "score_distribution": {
+      "max": 87.5,
+      "median": 86.0,
+      "min": 78.5
+    },
+    "top_strengths": [
+      "Reviewed PRs average 84.4/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "4 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Data warehouse, Frontend product UI, Backend services."
+    ],
+    "weighted_pr_quality_average": 84.4
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "jonmcwest",
+    "executive_summary": "jonmcwest shows high-confidence quality evidence across 5 sampled PRs, with strongest signal in Frontend product UI, Insights / Product analytics, MCP / Coding agents.",
+    "high_confidence_impact_count": 2,
+    "ownership_signal": 3.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 76.9,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/64118",
+      "https://github.com/PostHog/posthog/pull/64000",
+      "https://github.com/PostHog/posthog/pull/64885",
+      "https://github.com/PostHog/posthog/pull/65119",
+      "https://github.com/PostHog/posthog/pull/65460#pullrequestreview-4553920826",
+      "https://github.com/PostHog/posthog/pull/65439#pullrequestreview-4553283148"
+    ],
+    "review_interactions": [
+      {
+        "example": "ty Robbie!",
+        "pr_number": 65460,
+        "pr_title": "feat(tracing): add p99/p99.9 percentiles to span aggregates",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65460",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65460#pullrequestreview-4553920826"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 65439,
+        "pr_title": "fix(logs): allow server-side CSV export through query access guard",
+        "pr_url": "https://github.com/PostHog/posthog/pull/65439",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/65439#pullrequestreview-4553283148"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64489,
+        "pr_title": "fix(logs): default sparkline dateRange and filterGroup for omitted args",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64489",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64489#pullrequestreview-4523913901"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "nice, big fan",
+        "pr_number": 64298,
+        "pr_title": "feat(tracing): collapse spans in waterfall view",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64298",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64298#pullrequestreview-4516231404"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "sweet",
+        "pr_number": 64251,
+        "pr_title": "feat(tracing): paginate trace waterfall with infinite scroll",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64251",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64251#pullrequestreview-4514827424"
+        ],
+        "substantive": false
+      }
+    ],
+    "review_leverage_quality": 50.0,
+    "reviewed_pr_count": 5,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "3 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 84.5,
+      "median": 79.5,
+      "min": 70.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 78.7/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "2 reviewed PR(s) clear the >=80 high-confidence-impact threshold."
+    ],
+    "weighted_pr_quality_average": 78.7
+  },
+  {
+    "communication_quality_average": 4.0,
+    "confidence": "high",
+    "contributor": "MattPua",
+    "executive_summary": "MattPua shows high-confidence quality evidence across 5 sampled PRs, with strongest signal in Frontend product UI, Dashboards / Alerts, Insights / Product analytics.",
+    "high_confidence_impact_count": 3,
+    "ownership_signal": 4.0,
+    "quality_consistency_percent": 100.0,
+    "quality_score": 83.1,
+    "representative_sources": [
+      "https://github.com/PostHog/posthog/pull/63614",
+      "https://github.com/PostHog/posthog/pull/65507",
+      "https://github.com/PostHog/posthog/pull/63066",
+      "https://github.com/PostHog/posthog/pull/65539",
+      "https://github.com/PostHog/posthog/pull/64730#pullrequestreview-4528916126",
+      "https://github.com/PostHog/posthog/pull/64271#pullrequestreview-4515917335"
+    ],
+    "review_interactions": [
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64730,
+        "pr_title": "refactor: lift markdown link sanitizer to a shared helper + harden exports",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64730",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64730#pullrequestreview-4528916126"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "I think one thing would be helpful (if not already) is that if they try to delete a template thats cross org, that its clear that its not just in that project.",
+        "pr_number": 64271,
+        "pr_title": "feat(dashboards): add organization scope to dashboard templates",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64271",
+        "review_quality_percent": 90.0,
+        "review_quality_score": 4.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64271#pullrequestreview-4515917335",
+          "https://github.com/PostHog/posthog/pull/64271#pullrequestreview-4515985636",
+          "https://github.com/PostHog/posthog/pull/64271#pullrequestreview-4515997307",
+          "https://github.com/PostHog/posthog/pull/64271#discussion_r3428403998",
+          "https://github.com/PostHog/posthog/pull/64271#discussion_r3428408863"
+        ],
+        "substantive": true
+      },
+      {
+        "example": "whats the longest time a hogql alert calculation might take?",
+        "pr_number": 62669,
+        "pr_title": "feat(alerts): add SQL (HogQL) insight alerts",
+        "pr_url": "https://github.com/PostHog/posthog/pull/62669",
+        "review_quality_percent": 90.0,
+        "review_quality_score": 4.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/62669#pullrequestreview-4516866868",
+          "https://github.com/PostHog/posthog/pull/62669#discussion_r3429190686",
+          "https://github.com/PostHog/posthog/pull/62669#discussion_r3429206203",
+          "https://github.com/PostHog/posthog/pull/62669#discussion_r3429226065",
+          "https://github.com/PostHog/posthog/pull/62669#discussion_r3429270429"
+        ],
+        "substantive": true
+      },
+      {
+        "example": "Approval/review event without a substantive public body.",
+        "pr_number": 64008,
+        "pr_title": "feat(dashboards): persist list filters in the URL",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64008",
+        "review_quality_percent": 50.0,
+        "review_quality_score": 2.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64008#pullrequestreview-4527575505"
+        ],
+        "substantive": false
+      },
+      {
+        "example": "is 50k too big?",
+        "pr_number": 64314,
+        "pr_title": "fix(max): bound dashboard context to the conversation window",
+        "pr_url": "https://github.com/PostHog/posthog/pull/64314",
+        "review_quality_percent": 90.0,
+        "review_quality_score": 4.5,
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/64314#pullrequestreview-4517287948",
+          "https://github.com/PostHog/posthog/pull/64314#discussion_r3429547322",
+          "https://github.com/PostHog/posthog/pull/64314#discussion_r3429553116"
+        ],
+        "substantive": true
+      }
+    ],
+    "review_leverage_quality": 74.0,
+    "reviewed_pr_count": 5,
+    "reviewed_review_interaction_count": 5,
+    "risks_or_caveats": [
+      "1 reviewed PR(s) have sparse public review discussion.",
+      "3 reviewed PR(s) do not show test files in the GitHub file list."
+    ],
+    "score_distribution": {
+      "max": 86.5,
+      "median": 83.0,
+      "min": 71.0
+    },
+    "top_strengths": [
+      "Reviewed PRs average 79.9/100 after impact-weighting.",
+      "100.0% of reviewed PRs score at least 70.",
+      "3 reviewed PR(s) clear the >=80 high-confidence-impact threshold.",
+      "Strong ownership signal in Frontend product UI, Dashboards / Alerts, Insights / Product analytics.",
+      "Review leverage average is 74.0/100 across sampled review interactions."
+    ],
+    "weighted_pr_quality_average": 79.9
+  }
+]
