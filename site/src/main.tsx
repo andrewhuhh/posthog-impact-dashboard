@@ -44,6 +44,7 @@ type ReviewInteraction = {
 };
 
 type ContributorQuality = {
+  avatar_url?: string | null;
   communication_quality_average: number;
   confidence: string;
   contributor: string;
@@ -59,6 +60,8 @@ type ContributorQuality = {
   reviewed_review_interaction_count: number;
   risks_or_caveats: string[];
   score_distribution: { max: number; median: number; min: number };
+  html_url?: string | null;
+  name?: string | null;
   top_strengths: string[];
   weighted_pr_quality_average: number;
 };
@@ -217,6 +220,14 @@ function topAreas(reviews: QualitativePr[]) {
 
 function reasonFor(person: ContributorQuality, rank: number) {
   return `${formatRank(rank)} in the analysis because ${person.executive_summary.replace(/^.*?shows /i, "").replace(/\.$/, "")}.`;
+}
+
+function displayName(person: ContributorQuality) {
+  return person.name?.trim() || `@${person.contributor}`;
+}
+
+function profileUrl(person: ContributorQuality) {
+  return person.html_url || `https://github.com/${person.contributor}`;
 }
 
 function RankMarker({ rank }: { rank: number }) {
@@ -540,7 +551,8 @@ function PersonRow({
     <button className="person-row" type="button" onClick={onOpen}>
       <div className="rank"><RankMarker rank={rank} /></div>
       <div className="person-main">
-        <div className="handle">@{person.contributor}</div>
+        <div className="handle">{displayName(person)}</div>
+        {person.name ? <div className="subhandle">@{person.contributor}</div> : null}
         <div className="summary">{reasonFor(person, rank)}</div>
         <div className="metrics">
           <span>{person.confidence} confidence</span>
@@ -706,7 +718,8 @@ function Sidebar({
                   }}
                 >
                   <span>{formatRank(index + 1)}</span>
-                  <b>@{person.contributor}</b>
+                  <b>{displayName(person)}</b>
+                  {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
                 </button>
               ))}
@@ -727,7 +740,8 @@ function Sidebar({
                   }}
                 >
                   <span>{formatRank(index + 1)}</span>
-                  <b>@{person.contributor}</b>
+                  <b>{displayName(person)}</b>
+                  {person.name ? <small>@{person.contributor}</small> : null}
                   <em>{formatNumber(person.quality_score)}</em>
                 </button>
               );
@@ -780,7 +794,8 @@ function LeaderboardHome({
             {topFive.map((person, index) => (
               <button className="quicklink" key={person.contributor} onClick={() => openContributor(index)}>
                 <span className="quicklink-rank"><RankMarker rank={index + 1} /></span>
-                <b>@{person.contributor}</b>
+                <b>{displayName(person)}</b>
+                {person.name ? <span className="quicklink-handle">@{person.contributor}</span> : null}
                 <em>{formatNumber(person.quality_score)} quality score</em>
               </button>
             ))}
@@ -821,7 +836,7 @@ function LeaderboardHome({
               {data.contributors.map((person, index) => (
                 <tr key={person.contributor}>
                   <td>{formatRank(index + 1)}</td>
-                  <td>@{person.contributor}</td>
+                  <td><span className="name-cell">{displayName(person)}{person.name ? <small>@{person.contributor}</small> : null}</span></td>
                   <td>{formatNumber(person.quality_score)}</td>
                   <td>{formatNumber(person.reviewed_pr_count)}</td>
                   <td>{formatNumber(person.high_confidence_impact_count)}</td>
@@ -851,8 +866,8 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
       <section className="tile selected-tile">
         <TileHeader
           color="#f5a623"
-          title={`${formatRank(rank)} @${person.contributor}`}
-          description={person.executive_summary}
+          title="Contributor profile"
+          description="Contributor score and sampled evidence summary."
           tooltip={{
             kicker: "Contributor profile",
             description: "Profile summary from the contributor quality export.",
@@ -864,18 +879,25 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           }}
         />
         <div className="selected-body">
-          <div className="selected-metric">
+          <div className="selected-score-card">
+            <span>{formatRank(rank)}</span>
             <b>{formatNumber(person.quality_score)}</b>
-            <span>Quality score</span>
+            <em>Quality score</em>
           </div>
-          <div className="metric-strip">
-            <div><b>{formatNumber(person.reviewed_pr_count)}</b><span>Reviewed PRs</span></div>
-            <div><b>{formatNumber(person.high_confidence_impact_count)}</b><span>High-confidence impact</span></div>
-            <div><b>{person.confidence}</b><span>Confidence</span></div>
+          <div className="selected-profile-main">
+            <a className="selected-handle" href={profileUrl(person)} target="_blank" rel="noreferrer">
+              <span>
+                <b>{displayName(person)}</b>
+                {person.name ? <small>@{person.contributor}</small> : null}
+              </span>
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
+            <div className="selected-facts">
+              <div><b>{formatNumber(person.reviewed_pr_count)}</b><span>Reviewed PRs</span></div>
+              <div><b>{formatNumber(person.high_confidence_impact_count)}</b><span>High-confidence impact</span></div>
+              <div><b>{person.confidence}</b><span>Confidence</span></div>
+            </div>
           </div>
-          <a className="lemon-button" href={`https://github.com/${person.contributor}`} target="_blank" rel="noreferrer">
-            <ExternalLink size={16} aria-hidden="true" />GitHub profile
-          </a>
         </div>
       </section>
 
@@ -971,10 +993,14 @@ function ContributorProfile({ data, person, rank }: { data: AnalysisDashboard; p
           {reviews.map((review) => (
             <a className="evidence analysis-evidence" href={review.pr_url} key={review.pr_number} target="_blank" rel="noreferrer">
               <span className="pr">{formatRank(review.pr_number)}</span>
-              <span className="evidence-title">{review.pr_title}</span>
-              <span className="tag">{review.work_type}</span>
-              <span className="score-pill">{formatNumber(review.pr_quality_score)}</span>
-              <span className="why">{review.summary_judgment}</span>
+              <span className="evidence-main">
+                <span className="evidence-title">{review.pr_title}</span>
+                <span className="why">{review.summary_judgment}</span>
+              </span>
+              <span className="evidence-meta">
+                <span className="tag">{review.work_type}</span>
+                <span className="score-pill">{formatNumber(review.pr_quality_score)}</span>
+              </span>
             </a>
           ))}
         </div>
@@ -1070,7 +1096,7 @@ function RawDataView({ data, table }: { data: AnalysisDashboard; table: RawTable
                 {data.contributors.map((person, index) => (
                   <tr key={person.contributor}>
                     <td>{formatRank(index + 1)}</td>
-                    <td>@{person.contributor}</td>
+                    <td><span className="name-cell">{displayName(person)}{person.name ? <small>@{person.contributor}</small> : null}</span></td>
                     <td>{formatNumber(person.quality_score)}</td>
                     <td>{formatNumber(person.reviewed_pr_count)}</td>
                     <td>{pct(person.review_leverage_quality)}</td>
@@ -1213,7 +1239,7 @@ function App() {
   const pageMode = route.pageMode;
   const contributorOptions: DropdownOption<number>[] = contributors.map((person, index) => ({
     value: index,
-    label: `${formatRank(index + 1)} @${person.contributor}`,
+    label: `${formatRank(index + 1)} ${displayName(person)}`,
     description: `${formatNumber(person.quality_score)} score - ${formatNumber(person.reviewed_pr_count)} reviewed PRs`,
   }));
 
